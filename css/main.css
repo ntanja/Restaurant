@@ -1,9 +1,32 @@
 
+.navbar-default {
+    background-color: transparent;
+    border: none;
+}
+.navbar{
+    position: fixed;
+    z-index: 20;
+}
 .nav li{
     display: inline-block;
     padding-right: 30px;
 }
-
+.yummy .carousel-caption img{
+    display: inline-block;
+}
+.flower::after{
+   width: 100px;
+   height: 50px;
+   display: inline-block;
+   margin: 0 auto;
+   content: url("style-images/border.png");
+   background-size: contain;
+   z-index: 100;
+   position: relative;
+}
+.flower span{
+    display: block;
+}
 
 
 
