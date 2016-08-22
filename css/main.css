@@ -1,43 +1,399 @@
 
-.navbar-default {
-    background-color: transparent;
-    border: none;
+/********GENERAL SETTINGS********/
+p,a{
+    font-family: 'Philosopher', sans-serif;
 }
-.navbar{
+a:hover{
+    text-decoration: none;
+}
+h1,h3{
+    font-family: 'Great Vibes', cursive;
+    color: #d4af37; 
+}
+.gold{
+    color: #d4af37; 
+}
+.goldLink{
+    color: #d4af37;
+    background-color: #fff; 
+    border: 1px solid #d4af37;
+}
+.goldLink:hover{
+    color: #fff;
+    background-color: #d4af37;
+}
+.goldRound{
+    color: #d4af37;
+    background-color: transparent;
+    border: 1px solid #d4af37;
+    border-radius: 25px;
+    padding: 10px 30px;
+}
+.goldRound:hover{
+    background-color: #d4af37; 
+    color: #fff;
+}
+/****************NAVIGATION******************/
+header{
     position: fixed;
     z-index: 20;
+    width: 100%;
+    background: rgba(32,43,49,0.9);
+    top: 0;
 }
-.nav li{
-    display: inline-block;
-    padding-right: 30px;
+.navbar{
+    border: none;
+    background: transparent;
 }
-.yummy .carousel-caption img{
-    display: inline-block;
+.navbar-default .navbar-nav > li > a {
+    text-align: center;
+    color: #fff;
 }
+.navbar-brand{
+    margin-top: -10px;
+    padding-left: 20px;
+}
+.navbar-brand > img {
+    width: 50px;
+}
+.navbar-default .navbar-collapse, .navbar-default .navbar-form {
+    border-color: #d4af37;
+}
+.navbar-default .navbar-nav > li > a:hover, .navbar-default .navbar-nav > li > a:focus {
+    color: #d4af37;
+    background-color: transparent;
+    outline: none;
+}
+.navbar-default .navbar-toggle:hover, .navbar-default .navbar-toggle:focus {
+    background-color: transparent;
+    border: 1px solid #d4af37;
+}
+.navbar-default .navbar-toggle .icon-bar {
+    background-color: #d4af37;
+}
+/*****************/
+main{
+    margin-top: 70px;
+}
+/*****************SECTION 1 - CAROUSEL***********/
+.delicious{
+    top: 0;
+}
+.delicious h1{
+    font-size: 26px;
+    font-weight: bold;
+}
+.delicious img{
+    display: none;
+    margin: 0 auto;
+}
+.firstSlider p{
+    display: none;
+}
+.carousel-indicators {
+    bottom: 0;
+}
+.carousel-indicators .active {
+    width: 12px;
+    height: 12px;
+    margin: 0;
+    background-color: #d4af37;
+}
+.carousel-indicators li{
+    border: 1px solid #d4af37;
+}
+.carousel-control:hover, .carousel-control:focus {
+    color: #d4af37;
+}
+
 .flower::after{
-   width: 100px;
-   height: 50px;
-   display: inline-block;
-   margin: 0 auto;
-   content: url("style-images/border.png");
-   background-size: contain;
-   z-index: 100;
-   position: relative;
+    height: 20px;
+    display: inline-block;
+    margin: 0 auto;
+    content: url("style-images/border.png");
+    background-size: contain;
+    z-index: 100;
+    position: relative;
 }
 .flower span{
     display: block;
 }
 
+/****************SECTION "hours" ******************/
+.hours{
+    background-color: #111;
+    color: #fff;
+}
+.hours .col-sm-4 p{
+    padding: 15px 0 10px;;
+}
+.hour p.gold{
+    font-style: italic;
+}
+.opHours {
+    background-color: #161616;
+    margin-right: 5px;
+    padding: 0 10px;
+    width: 31.5%;
+}
+.opHours:last-of-type{
+    margin-right: 0;
+}
+.opHours article{
+    border: 1px solid #1e1e1e;
+    margin: 10px 0;
+    padding: 20px 0;
+}
+/****************SECTION "restaurant" ******************/
 
-
-
-
-
-
-
-
-
-
-
-
-
+.restaurant h2 {
+    font-family: 'Philosopher', sans-serif;
+    margin-top: -15px;
+}
+.restaurant h2.gold{
+    font-family: 'Great Vibes', cursive;
+    margin-bottom: 0;
+}
+.restaurant .row{
+    margin: 0;
+}
+.restaurant article{
+    padding: 20px;
+}
+.restaurant a{
+    padding: 10px 40px;
+}
+.restaurant p{
+    margin-bottom: 30px;
+}
+.divider::after{
+    display: block;
+    margin: 0 auto;
+    content: url("style-images/divider.png");
+    background-size: contain;
+    z-index: 100;
+    position: relative;
+}
+.divider span{
+    display: block;
+}  
+/****************SECTION "wood" ******************/
+.wood{
+    background: url("style-images/wood.png")no-repeat center center;
+    background-size: cover;
+    color: #fff;
+}
+.wood h4{
+    font-family: 'Philosopher', sans-serif;
+}
+.wood h4.gold{
+   font-family: 'Great Vibes', cursive; 
+}
+.restaurant h2.gold,
+.services h2,
+.food h2,
+.ourChef h2{
+    font-family: 'Great Vibes', cursive;
+    margin-top: 40px;
+}
+.wood img{
+    padding-top: 30px;
+}
+.wood .row{
+    padding: 50px;
+}
+/****************SECTION "services" ******************/
+.services{
+    margin-bottom: 40px;
+}
+.services article{
+    margin-bottom: 20px;
+}
+.dinner{
+    position: relative;
+}
+.dinner figure{
+    position: relative;
+    max-width: 370px;
+    max-height : 245px;
+}
+.dinnerHover{
+    background: rgba(37,37,37,0.8) url("style-images/background.png")no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 370px;
+    margin: 0 auto;
+    padding-top: 40px;
+    color: #fff;
+    text-align: center;
+}
+.dinnerHover p{
+    padding: 20px 0;
+}
+img.din{
+    display: none;
+    height: 50px;
+}
+img.din-w{
+    height: 50px;
+}
+.dinnerHover{
+    overflow: hidden;
+}
+.dinnerHover img{
+    transition-duration: 1s;
+    transition-property: all;
+}
+.dinnerHover img:hover{
+    transform: scale(1.4);
+}
+/****************SECTION "food" ******************/
+.food{
+    background: url("style-images/wood1.png")no-repeat center center;
+    background-size: cover;
+    color: #a9a9a9;
+}
+.foodBck{
+    background: #fff;
+    margin-bottom: 50px;
+}
+.food li{
+    padding: 10px;
+    border-bottom: 2px solid #000;
+}
+.food li p{
+    color: #a9a9a9;
+}
+.food li h5{
+    color:  #332e33;
+    font-weight: bold;
+}
+.food li h5:hover{
+    color: #d4af37;
+}
+#myTabs .row{
+    border: 1px solid #d4af37;
+    margin: 0;
+}
+.icons1{
+    background: #f1f1f1 url("style-images/icon1.png")no-repeat center center;
+    width: 65px;
+    height: 65px;
+}
+.icons1:hover{
+    background: #f1f1f1 url("style-images/icon1-y.png")no-repeat center center;
+}
+.icons2{
+    background: #f1f1f1 url("style-images/icon2.png")no-repeat center center;
+    width: 65px;
+    height: 65px;
+}
+.icons2:hover{
+    background: #f1f1f1 url("style-images/icon2-y.png")no-repeat center center;
+}
+.icons3{
+    background: #f1f1f1 url("style-images/icon3.png")no-repeat center center;
+    width: 65px;
+    height: 65px;
+}
+.icons3:hover{
+    background: #f1f1f1 url("style-images/icon3-y.png")no-repeat center center;
+}
+.icons4{
+    background: #f1f1f1 url("style-images/icon4.png")no-repeat center center;
+    width: 65px;
+    height: 65px;
+}
+.icons4:hover{
+    background: #f1f1f1 url("style-images/icon4-y.png")no-repeat center center;
+}
+.food figure{
+    width: 90px;
+    height: 90px;
+}
+#breakfast, #lunch, #dinner, #drinks{
+    margin-top: 20px;
+}
+.food figure img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition-duration: 2s;
+    transition-property: all;
+}
+.food figure img:hover{
+    transform: scale(1.3) ;
+}
+.marmo{
+    margin-bottom: 60px;
+}
+.dots{
+    border-bottom: 1px dotted #332e33;
+    margin-top: 30px;
+}
+.dots a{
+    margin-top: -15px;
+    background: #fff;
+    color: #332e33;
+    font-weight: bold;
+}
+div.marmo:hover a{
+    color: #d4af37;
+}
+div.marmo:hover .dots{
+    border-bottom: 1px dotted #d4af37;
+}
+/****************SECTION "ourChef" ******************/
+ figure.chefPic{
+    height: 150px;
+    width: 150px;
+    margin: 0 auto;
+}
+.ourChef figure img{
+    max-width: 100%;
+    max-height: 100%;
+}
+.ourChef{
+    margin-bottom: 50px;
+    position: relative;
+}
+.chef h4{
+     font-family: 'Philosopher', sans-serif;
+}
+.chef h5{
+    color: #fff;
+}
+.chef{
+    width: 100%;
+    height: 100%;
+    max-width: 600px;
+    max-height: 530px;
+    
+}
+div.chef{
+    background: url("style-images/chefbck.png")no-repeat center center;
+    background-size: contain;
+    color: #c1c1c1;
+    text-align: center;
+    position: absolute;
+    font-size: 12px;
+    margin: 0 auto;
+    padding-top:  30px;
+}
+.chef p{
+    line-height: 12px;
+    height: 50px;
+    overflow: scroll;
+    max-width: 300px;
+    text-align: center;
+    position: absolute;
+    left: 50px;
+}
+figure.top {
+    margin-top: -150px;
+}

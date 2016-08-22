@@ -9,11 +9,13 @@
         <title></title>
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
-        <link rel="apple-touch-icon" href="apple-touch-icon.png">
+        <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-
+        <link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
-
+        <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
     </head>
     <body>
@@ -37,7 +39,7 @@
 
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
-                        <ul class="nav navbar-nav text-center">
+                        <ul class="nav navbar-nav">
                             <li><a href="#">Home</a></li>
                             <li><a href="#">About</a></li>
                             <li><a href="#">Service</a></li>
@@ -46,59 +48,782 @@
                             <li><a href="#">Blog</a></li>
                             <li><a href="#">Contact</a></li>
                         </ul>
-
                     </div><!-- /.navbar-collapse -->
                 </div><!-- /.container-fluid -->
             </nav>
+
         </header>
 
         <main>
-            <section class="yummy">
-                <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+
+            <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
+                <!-- Indicators -->
+                <ol class="carousel-indicators">
+                    <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="1"></li>
+                    <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                </ol>
+
+                <!-- Wrapper for slides -->
+                <div class="carousel-inner" role="listbox">
+                    <div class="item active firstSlider">
+                        <img src="img/main.jpg" alt="" class="img-responsive"/>
+                        <div class="carousel-caption text-center delicious">
+                            <h1>Yummy! Delicious!</h1>
+                            <p class="flower"><span>Love of beauty is taste. The creation of beauty is art.</span></p>
+
+                        </div>
+                    </div>
+                    <div class="item firstSlider">
+                        <img src="img/main2.jpg" alt="" class="img-responsive"/>
+                        <div class="carousel-caption text-center delicious">
+                            <h1>Yummy! Delicious!</h1>
+                            <p>Love of beauty is taste. The creation of beauty is art.</p>
+                            <img src="img/border.png" alt="" class="img-responsive"/>
+                        </div>
+                    </div>
+                    <div class="item firstSlider">
+                        <img src="img/main3.jpg" alt="" class="img-responsive"/>
+                        <div class="carousel-caption delicious">
+                            <h1>Yummy! Delicious!</h1>
+                            <p class="flower"><span>Love of beauty is taste. The creation of beauty is art.</span></p>
+
+                        </div>
+                    </div>
+                </div>
+
+                <!-- Controls -->
+                <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
+                    <span class="sr-only">Previous</span>
+                </a>
+                <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
+                    <span class="sr-only">Next</span>
+                </a>
+            </div>
+
+            <section class="hours">
+                <div class="container">
+                    <div class="row">
+                        <div class="col-sm-4">
+                            <article class="text-center">
+                                <p>Our RosulGhor's Restaurant Hours:</p> 
+                            </article>
+                        </div>
+                        <div class="col-sm-8">
+                            <div class="row text-center">
+                                <div class="col-xs-4 opHours">
+                                    <article>
+                                        <p class="gold">Tuesday - Thursday</p>
+                                        <p>9:30am - 11:00pm</p>
+                                    </article>
+                                </div>
+                                <div class="col-xs-4 opHours">
+                                    <article>
+                                        <p class="gold">Friday & Saturday</p>
+                                        <p>05:30pm - 11:00pm</p>
+                                    </article>
+                                </div>
+                                <div class="col-xs-4 opHours">
+                                    <article>
+                                        <p class="gold">Monday & Sunday</p>
+                                        <p>Offday Closed</p>
+                                    </article>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="restaurant">
+                <div class="row">
+                    <div class="col-md-6">
+                        <article class="text-center">
+                            <h2 class="gold">RosuiGhor</h2> 
+                            <h2 class="divider"><span>Restaurant</span></h2>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                sed do eiusmod incididunt ut labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                irure dolor in reprehenderit in voluptate velit esse cillum 
+                                dolore eu fugiat nulla to the ongoing  end of this specific 
+                                paragraph pariatur. end line. 
+                            </p>
+                            <a href="#" class="goldLink">Learn more</a>
+                        </article>
+                    </div>
+                    <div class="col-md-6">
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <article>
+                                    <figure>
+                                        <img src="img/restaurant-first.png" alt="" class="img-responsive center-block"/>
+                                    </figure>
+                                </article>
+                            </div>
+                            <div class="col-sm-6">
+                                <article>
+                                    <figure>
+                                        <img src="img/restaurant-second.png" alt="" class="img-responsive"/>
+                                    </figure>
+                                </article>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="wood">
+                <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
-                        <li data-target="#carousel-example-generic" data-slide-to="0" class="active"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="1"></li>
-                        <li data-target="#carousel-example-generic" data-slide-to="2"></li>
+                        <li data-target="#carousel-example-generic1" data-slide-to="0" class="active"></li>
+                        <li data-target="#carousel-example-generic1" data-slide-to="1"></li>
+                        <li data-target="#carousel-example-generic1" data-slide-to="2"></li>
                     </ol>
 
                     <!-- Wrapper for slides -->
+
                     <div class="carousel-inner" role="listbox">
+
                         <div class="item active">
-                            <img src="img/main.jpg" alt="" class="img-responsive"/>
-                            <div class="carousel-caption text-center ">
-                                <h2>Yummy! Delicious!</h2>
-                                <p class="flower"><span>Love of beauty is taste. The creation of beauty is art.</span></p>
-                                
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <figure>
+                                            <img src="img/plate.png" alt="" class="img-responsive"/>
+                                        </figure>
+                                    </div> 
+                                    <div class="col-sm-6 text-center">
+                                        <h3 class="gold">Our Special Dishes</h3>
+                                        <h4>Yummy Masala Fried Chicken</h4>
+                                        <h5>
+                                            Client's Rating
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                        </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur 
+                                            adipisicing elit, sed do eiusmod temor it 
+                                            incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quisi nostrud 
+                                            exercitation ullamco laboris nisi ut aliquip 
+                                            ex ea commodo consequat. Duis aute to the end 
+                                            of this specific paragraph.
+                                        </p>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="img/main2.jpg" alt="" class="img-responsive"/>
-                            <div class="carousel-caption">
-                                <h2>Yummy! Delicious!</h2>
-                                <p>Love of beauty is taste. The creation of beauty is art.</p>
-                                
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <figure>
+                                            <img src="img/plate2.png" alt="" class="img-responsive"/>
+                                        </figure>
+                                    </div> 
+                                    <div class="col-sm-6 text-center">
+                                        <h3 class="gold">Our Special Dishes</h3>
+                                        <h4>Yummy Chicken Kebab</h4>
+                                        <h5>
+                                            Client's Rating
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                        </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur 
+                                            adipisicing elit, sed do eiusmod temor it 
+                                            incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quisi nostrud 
+                                            exercitation ullamco laboris nisi ut aliquip 
+                                            ex ea commodo consequat. Duis aute to the end 
+                                            of this specific paragraph.
+                                        </p>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
                         <div class="item">
-                            <img src="img/main3.jpg" alt="" class="img-responsive"/>
-                            <div class="carousel-caption">
-                                <h2>Yummy! Delicious!</h2>
-                                <p>Love of beauty is taste. The creation of beauty is art.</p>
-                                
+                            <div class="container">
+                                <div class="row">
+                                    <div class="col-sm-6">
+                                        <figure>
+                                            <img src="img/plate3.png" alt="" class="img-responsive"/>
+                                        </figure>
+                                    </div> 
+                                    <div class="col-sm-6 text-center">
+                                        <h3 class="gold">Our Special Dishes</h3>
+                                        <h4>Yummy Lamb Chops</h4>
+                                        <h5>
+                                            Client's Rating
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                            <span class="fa fa-star gold"></span>
+                                        </h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur 
+                                            adipisicing elit, sed do eiusmod temor it 
+                                            incididunt ut labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quisi nostrud 
+                                            exercitation ullamco laboris nisi ut aliquip 
+                                            ex ea commodo consequat. Duis aute to the end 
+                                            of this specific paragraph.
+                                        </p>
+                                    </div>  
+                                </div>
                             </div>
                         </div>
                     </div>
 
                     <!-- Controls -->
-                    <a class="left carousel-control" href="#carousel-example-generic" role="button" data-slide="prev">
+                    <a class="left carousel-control" href="#carousel-example-generic1" role="button" data-slide="prev">
                         <span class="glyphicon glyphicon-chevron-left" aria-hidden="true"></span>
                         <span class="sr-only">Previous</span>
                     </a>
-                    <a class="right carousel-control" href="#carousel-example-generic" role="button" data-slide="next">
+                    <a class="right carousel-control" href="#carousel-example-generic1" role="button" data-slide="next">
                         <span class="glyphicon glyphicon-chevron-right" aria-hidden="true"></span>
                         <span class="sr-only">Next</span>
                     </a>
+                </div>
+            </section>
+
+            <section class="services">
+                <div class="container">
+                    <h2 class="gold divider text-center">Our Awesome Services</h2>
+                    <div class="row">
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/dinner1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/din-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/din.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Fine dinning</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/coffee1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/coffee-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/coffee.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Coffee Shop</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/buffet1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/buffet-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/buffet.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Buffet Service</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/bar1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/bar-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/bar.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Drinks & Bar</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/shop1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/shop-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/shop.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Online Store</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                        <div class="col-sm-6 col-md-4">
+                            <article class='dinner'>
+                                <figure class="center-block">
+                                    <img src="img/catering1.png" alt="" class="img-responsive"/>
+                                </figure>
+                                <div class="dinnerHover">
+                                    <img src="img/cater-w.png" alt="" class="img-responsive center-block din-w"/>
+                                    <img src="img/cater.png" alt="" class="img-responsive center-block din"/>
+                                    <p>Catering Service</p>
+                                    <a href="#" class="goldRound">Read more</a>
+                                </div>
+                            </article>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="food">
+                <div class="container">
+                    <h2 class="gold divider text-center">Our Food Menu</h2>
+                    <div class="row foodBck">
+                        <div class="col-md-3">
+                            <ul class="nav nav-pills nav-stacked" id="myTabs">
+                                <li role="presentation" class="active" >
+                                    <div class="row">
+                                        <div class="col-xs-3 icons1"></div> 
+                                        <div class="col-xs-9">
+                                            <a href="#breakfast" data-toggle="pill">
+                                                <h5>Breakfast</h5>
+                                                <p>Time: 08.00-11.30</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="presentation">
+                                    <div class="row">
+                                        <div class="col-xs-3 icons2"></div> 
+                                        <div class="col-xs-9">
+                                            <a href="#lunch" data-toggle="pill">
+                                                <h5>Lunch</h5>
+                                                <p>Time: 11.30-15.30</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="presentation">
+                                    <div class="row">
+                                        <div class="col-xs-3 icons3"></div> 
+                                        <div class="col-xs-9">
+                                            <a href="#dinner" data-toggle="pill">
+                                                <h5>Dinner</h5>
+                                                <p>Time: 15.30-22.30</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                                <li role="presentation">
+                                    <div class="row">
+                                        <div class="col-xs-3 icons4"></div> 
+                                        <div class="col-xs-9">
+                                            <a href="#drinks" data-toggle="pill">
+                                                <h5>Drinks</h5>
+                                                <p>Time: 15.30-22.30</p>
+                                            </a>
+                                        </div>
+                                    </div>
+                                </li>
+                            </ul>
+                        </div>
+                        <div class="col-md-9">
+                            <div class="tab-content">
+                                <div class="tab-pane active" id="breakfast">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/marmo.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">MARMOELADO</a>
+                                                    <a href="#" class="pull-right">$1.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/beef-steak.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">BEEF STEAK</a>
+                                                    <a href="#" class="pull-right">$5.40</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/kacchi.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">KACCHI BIRYANI</a>
+                                                    <a href="#" class="pull-right">$7.60</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/seekh.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">SEEKH KABAB</a>
+                                                    <a href="#" class="pull-right">$9.90</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/vuna.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">VUNA KHICHURI</a>
+                                                    <a href="#" class="pull-right">$8.20</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="lunch">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/beef-steak.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">BEEF STEAK</a>
+                                                    <a href="#" class="pull-right">$5.40</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/kacchi.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">KACCHI BIRYANI</a>
+                                                    <a href="#" class="pull-right">$7.60</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/seekh.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">SEEKH KABAB</a>
+                                                    <a href="#" class="pull-right">$9.90</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/vuna.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">VUNA KHICHURI</a>
+                                                    <a href="#" class="pull-right">$8.20</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/marmo.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">MARMOELADO</a>
+                                                    <a href="#" class="pull-right">$1.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="dinner">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/vuna.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">VUNA KHICHURI</a>
+                                                    <a href="#" class="pull-right">$8.20</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/beef-steak.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">BEEF STEAK</a>
+                                                    <a href="#" class="pull-right">$5.40</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/kacchi.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">KACCHI BIRYANI</a>
+                                                    <a href="#" class="pull-right">$7.60</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/seekh.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">SEEKH KABAB</a>
+                                                    <a href="#" class="pull-right">$9.90</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/marmo.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">MARMOELADO</a>
+                                                    <a href="#" class="pull-right">$1.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+
+                                    </div>
+                                </div>
+                                <div class="tab-pane" id="drinks">
+                                    <div class="row">
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/blue.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">Blue Lagoon Cocktail</a>
+                                                    <a href="#" class="pull-right">$8.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/bourbon.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">Bourbon Cocktail</a>
+                                                    <a href="#" class="pull-right">$6.50</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/pink.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">Pink Cocktails</a>
+                                                    <a href="#" class="pull-right">$10.70</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/malibu.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">Malibu Cocktail</a>
+                                                    <a href="#" class="pull-right">$8.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                        <div class="col-sm-2">
+                                            <figure class="center-block">
+                                                <img src="img/flame.png" alt="" class="img-responsive"/>
+                                            </figure>
+                                        </div>
+                                        <div class="col-sm-10">
+                                            <div class="marmo">
+                                                <p class="dots">
+                                                    <a href="#" class="pull-left">Flaming Cocktail</a>
+                                                    <a href="#" class="pull-right">$12.30</a>
+                                                </p>
+                                                <p>
+                                                    Pan de caja con upon exquisit combination 
+                                                    of de fibras as en natural sabor suave.
+                                                </p>
+                                            </div>
+                                        </div>
+                                    </div>
+                                </div>
+                            </div>
+                        </div>
+                    </div>
+                </div>
+            </section>
+
+            <section class="ourChef">
+                <div class="container">
+                <h2 class="gold divider text-center">Our Experienced Chefs</h2>
+                <figure class="chefPic">
+                    <img src="img/Chef.png" alt="" class="img-responsive"/>
+                </figure>
+                <div class="chef">
+                    <h4 class="gold">Lauren Greene</h4>
+                    <h5>Chef de partie</h5>
+                    <p>
+                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                        do eiusmod tempor too incididi labore et dolore magna aliqua. 
+                        Ut enim ad minim veniam, quis nostrud it exercitation ulmco 
+                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur 
+                        dolor in repreherit into volu velit esse cillum dolore eu fugiat 
+                        nulla pariatur. Excepteur sint occaecat cupidatati non proit, sunt 
+                        in culpa qui officia deserunt to mollit anim id est laborum. 
+                    </p>
+                    <figure>
+                    <img src="img/signature.png" alt="" class="img-responsive"/>
+                    </figure>
+                </div>
                 </div>
             </section>
         </main>
@@ -118,7 +843,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-
+        <script src="js/jquery.easyResponsiveTabs.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
