@@ -1,7 +1,21 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    
+    .chefHover{
+    background: url("style-images/chef-border.png")no-repeat center center;
+    background-size: contain;
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: -35px;
+    max-width: 90%;
+    margin: 0 auto;
+    padding-top: 25px;
+    color: #fff;
+    text-align: center;
+    height: auto;
+}
 }     
     
 

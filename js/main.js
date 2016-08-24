@@ -1,19 +1,29 @@
 $(document).ready(function () {
 
-    $("article .dinnerHover").mouseover(function () {
-       $(this).children('.din-w').hide;
-       $(this).children('.din').show;
-                
-        /* $('.din-w').hide();
-        $('.din').show();
-        */
-    });
-    $("article .dinnerHover").mouseleave(function () {
-        $(this).children('.din-w').show;
-       $(this).children('.din').hide;
-    });
+    
 
-
+//Date & Time picker
+$('.form_date').datetimepicker({
+    
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 2,
+		minView: 2,
+		forceParse: 0
+    });
+	$('.form_time').datetimepicker({
+        language:  'fr',
+        weekStart: 1,
+        todayBtn:  1,
+		autoclose: 1,
+		todayHighlight: 1,
+		startView: 1,
+		minView: 0,
+		maxView: 1,
+		forceParse: 0
+    });
 
 
 

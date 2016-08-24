@@ -10,6 +10,9 @@ a:hover{
     font-family: 'Great Vibes', cursive;
     color: #d4af37; 
 }
+.sans{
+    font-family: 'Open Sans', sans-serif;
+}
 .gold{
     color: #d4af37; 
 }
@@ -208,7 +211,7 @@ main{
 .dinner{
     position: relative;
     overflow: hidden;
-    
+
 }
 .dinner figure{
     position: relative;
@@ -251,7 +254,6 @@ img.din-w{
     transform: scale(1.4);
 }
 
-
 .dinner:hover figure img{
     transform: scale(1.2);
     transition: 1s;
@@ -264,8 +266,8 @@ img.din-w{
     display: none;
 }
 .dinner:hover .dinnerHover a{
-  display: inline-block;
-  margin: 0 auto;
+    display: inline-block;
+    margin: 0 auto;
 }
 /****************SECTION "food" ******************/
 .food{
@@ -365,26 +367,23 @@ div.marmo:hover .dots{
     border-bottom: 1px dotted #d4af37;
 }
 /****************SECTION "ourChef" ******************/
- figure.chefPic{
+figure.chefPic{
     height: 150px;
     width: 150px;
     margin: 0 auto;
-}
-.ourChef figure img{
-    max-width: 100%;
-    max-height: 100%;
 }
 .ourChef{
     margin-bottom: 50px;
     position: relative;
 }
 .chef h4{
-     font-family: 'Philosopher', sans-serif;
+    font-family: 'Philosopher', sans-serif;
 }
 .chef h5{
     color: #fff;
 }
-.chefBck {
+/*
+.chefHover {
    background-image: url("style-images/border-top.png"), url("style-images/border-bottom.png");
     background-position: right top, -20px -20px;
     background-repeat: no-repeat;
@@ -394,7 +393,7 @@ div.marmo:hover .dots{
     padding: 30px;
  
 }
-div.chef {
+.chef {
    
     background-color: #252525;
     
@@ -407,7 +406,174 @@ div.chef {
     box-shadow: 10px 10px 0 #d4af37;
        padding-bottom: 20px;
 }
-.chef p{
-    text-align: center;
-    left: 50px;
+*/
+.chef{
+    position: relative;
+    max-width: 920px;
+    margin: 0 auto;
+    height: auto;
+}
+.chef figure{
+    position: relative;
+    max-width: 100%;
+    margin: 0 auto;
+    height: 450px;
+}
+.chef figure img{
+    max-width: 100%;
+    max-height: 100%;
+    margin: 0 auto;
+    height: 450px;
+}
+.chefHover{
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+    max-width: 90%;
+    padding-top: 30px;
+    color: #fff;
+    text-align: left;
+    height: auto;
+    border: 1px solid #d4af37;
+    margin: 15px 20px 30px 15px;
+    padding-left: 10px;
+}
+.chefHover p{
+    padding: 10px 20px 0 0;
+    font-size: 13px;
+}
+.chefHover figure{
+    height: 50px;
+}
+
+/****************SECTION "reservation" ******************/
+.reservation{
+    background: #111;
+}
+.reservation .row{
+    background: #1d1d1d;
+    padding: 20px 0;  
+}
+.reservation .form-control,
+.reservation .input-group-addon{
+    border: 1px solid #2f2f2f;
+    border-radius: 0;
+    background: #202020;
+}
+.reservation .form-control::-moz-placeholder {
+    color: #666;
+    opacity: 1;
+}
+.people {
+    margin-bottom: 15px;
+}
+.reservation button{
+    width: 90%;
+    padding: 5px 0;
+    margin-top: 15px;
+    color: #d4af37;
+    background-color: #202020;
+    border: 1px solid #d4af37;
+}
+.reservation button:hover{
+    color: #fff;
+    background-color: #d4af37;
+}
+/****************SECTION "blog" ******************/
+.blog .row{
+    background: #252525;
+    color: #fff;
+    margin-bottom: 20px;
+    padding-top: 20px;
+    padding-bottom: 20px;
+}
+.blog article{
+    padding-left: 10px;
+}
+.blog .news p{
+    margin: 0;
+    line-height: 1em;
+    border: 1px solid #d4af37;;
+    background: #d4af37;
+    padding: 10px;
+    padding-bottom: 0;
+    width: 50px;
+    margin: 0 auto;
+    text-align: left;
+}
+.blog .news p:last-of-type{
+    padding-bottom: 10px;
+    padding-top: 0;
+}
+.blog span{
+    padding-right: 5px;
+}
+.blog ul{
+    color: #c2c2c2;
+}
+.first{
+    border-bottom: 1px solid #363636;
+}
+/****************SECTION "footerTop" ******************/
+.footerTop{
+    background: #1e1e1e;
+}
+.footerTop p,
+.footerTop ul,
+.footerTop a{
+    font-family: 'Open Sans', sans-serif;
+    font-size: 12px;
+    color: #7d7d7d;
+}
+.footerTop .row{
+    margin: 0;
+}
+.social img{
+    margin: 30px auto;
+}
+.footerTop .social span{
+    font-size: 16px;
+}
+.footerTop .social ul li{
+    padding-right: 15px;
+    margin-top: 15px;
+}
+.line{
+    border-bottom: 1px solid #20282d;
+    margin: 30px 0 30px;
+}
+.twitter p{
+    padding-left: 40px;
+}
+.twitter p.back{
+    padding-left: 0;
+}
+.twitter span.fa{
+    font-size: 20px;
+    padding-right: 20px;
+}
+.contact .line{
+    margin: 10px 0;
+}
+.insta ul li{
+    width: 30%;
+    padding-bottom: 10px;
+    position: relative;
+}
+.insta img{
+    width: 80px;
+    height: 80px;
+    position: relative;
+}
+.instaHover {
+    font-size: 30px;
+    padding: 25px;
+    background-color: rgba(250,169,56,0.5);
+    position: absolute;
+    
+}
+.insta img:hover .instaHover{
+    display: block;
 }

@@ -12,8 +12,9 @@
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
+        <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
-        <link href="css/easy-responsive-tabs.css" rel="stylesheet" type="text/css"/>
+        <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -804,33 +805,271 @@
 
             <section class="ourChef">
                 <div class="container">
-                <h2 class="vibes divider text-center">Our Experienced Chefs</h2>
-                <figure class="chefPic">
-                    <img src="img/Chef.png" alt="" class="img-responsive"/>
-                </figure>
-                
-                <div class="chef">
-                    <div class="chefBck">
-                    <h4 class="vibes">Lauren Greene</h4>
-                    <h5>Chef de partie</h5>
-                    <p>
-                        Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
-                        do eiusmod tempor too incididi labore et dolore magna aliqua. 
-                        Ut enim ad minim veniam, quis nostrud it exercitation ulmco 
-                        laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur 
-                        dolor in repreherit into volu velit esse cillum dolore eu fugiat 
-                        nulla pariatur. Excepteur sint occaecat cupidatati non proit, sunt 
-                        in culpa qui officia deserunt to mollit anim id est laborum. 
-                    </p>
-                    <figure>
-                    <img src="img/signature.png" alt="" class="img-responsive"/>
+                    <h2 class="vibes divider text-center">Our Experienced Chefs</h2>
+                    <figure class="chefPic">
+                        <img src="img/Chef.png" alt="" class="img-responsive"/>
                     </figure>
-                    </div>
+
+                    <article class="chef">
+                        <figure class="center-block bord">
+                            <img src="img/black-yellow.png" alt="" class="img-responsive"/>
+                        </figure>
+                        <div class="chefHover">
+                            <h4 class="vibes">Lauren Greene</h4>
+                            <h5>Chef de partie</h5>
+                            <p>
+                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                                do eiusmod tempor too incididi labore et dolore magna aliqua. 
+                                Ut enim ad minim veniam, quis nostrud it exercitation ulmco 
+                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur 
+                                dolor in repreherit into volu velit esse cillum dolore eu fugiat 
+                                nulla pariatur. Excepteur sint occaecat cupidatati non proit, sunt 
+                                in culpa qui officia deserunt to mollit anim id est laborum. 
+                            </p>
+                            <figure class="pull-left">
+                                <img src="img/signature.png" alt="" class="img-responsive"/>
+                            </figure>
+                        </div>
+                    </article>
                 </div>
-                
+            </section>
+
+            <section class="reservation">
+                <div class="container">
+                    <h2 class="vibes divider text-center">Make a Reservation</h2>
+                    <form>
+                        <div class="row">
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                        <input class="form-control sans" size="16" type="text" value="" placeholder="Date&midast;" readonly required>
+                                    </div>
+                                    <input type="hidden" id="dtp_input2" value="" />
+                                </div> 
+                            </div>  
+                            <div class="col-sm-6">
+                                <div class="form-group">
+                                    <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                        <input class="form-control sans" size="16" type="text" value="" placeholder="Time&midast;" readonly required>
+                                    </div>
+                                    <input type="hidden" id="dtp_input3" value="" /><br/>
+                                </div>
+                            </div>
+                            <div class="col-sm-6 people">
+                                <div class="input-group" data-link-field="dtp_input4">
+                                    <span class="input-group-addon"><span class="fa fa-users"></span></span>
+                                    <select class="form-control sans" id="dtp_input4">
+                                        <option selected="selected" required>No.of people&midast;</option>
+                                        <option>1</option>
+                                        <option>2</option>
+                                        <option>3</option>
+                                        <option>4</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <div class="col-sm-6">
+                                <div class="input-group" data-link-field="dtp_input5">
+                                    <span class="input-group-addon"><span class="fa fa-cutlery"></span></span>
+                                    <select class="form-control sans" id="dtp_input5" required>
+                                        <option selected="selected" required>Restaurant Branch&midast;</option>
+                                        <option>Breakfast</option>
+                                        <option>Lunch</option>
+                                        <option>Dinner</option>
+                                        <option>Drink</option>
+                                    </select>
+                                </div>
+                            </div>
+                            <button class="center-block sans">Find a Table</button>
+                        </div>
+                    </form>
+                </div>
+            </section>
+
+            <section class="blog">
+                <div class="container">
+                    <h2 class="vibes divider text-center">Latest Blog & News</h2>
+                    <div class="row">
+                        <div class="col-xs-2 news">
+                            <p>09</p> 
+                            <p>NOV</p>
+                        </div> 
+                        <div class="col-xs-10">
+                            <article>
+                                <a href="#">
+                                    In-N-Out Is Running Out Of Yellow Chilies And Everyone Is Freaking Out
+                                </a>
+                                <ul class="list-inline list-unstyled first">
+                                    <li><span class="fa fa-comments-o"></span>17</li>
+                                    <li><span class="fa fa-eye"></span>124</li>
+                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                </ul>
+                                <p>
+                                    Sed ut perspiciatis unde omnis iste natus to it error sit too 
+                                    voluptatem accusantium dolorea nor udantium, totam for aperiam, 
+                                    ipsa too quae  aend ab illo inventore to end. Sed ut perspiciatis 
+                                    unde omnis iste natus to it error sit too voluptatem accusantium 
+                                    dolorea nor udantium.
+                                </p>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 news">
+                            <p>24</p> 
+                            <p>NOV</p>
+                        </div> 
+                        <div class="col-xs-10">
+                            <article>
+                                <a href="#">
+                                    Carl's Jr. Made An In-N-Out Inspired Burger & We Ate Both Side-By-Side
+                                </a>
+                                <ul class="list-inline list-unstyled">
+                                    <li><span class="fa fa-comments-o"></span>17</li>
+                                    <li><span class="fa fa-eye"></span>124</li>
+                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
+                    <div class="row">
+                        <div class="col-xs-2 news">
+                            <p>27</p> 
+                            <p>NOV</p>
+                        </div> 
+                        <div class="col-xs-10">
+                            <article>
+                                <a href="#">
+                                    Buy One 7-Eleven Slurpee And Get The Second FREE, All Weekend [DEALS] 
+                                </a>
+                                <ul class="list-inline list-unstyled">
+                                    <li><span class="fa fa-comments-o"></span>17</li>
+                                    <li><span class="fa fa-eye"></span>124</li>
+                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                </ul>
+                            </article>
+                        </div>
+                    </div>
                 </div>
             </section>
         </main>
+
+        <footer>
+            <section class="footerTop">
+                <div class="row">
+                    <div class="col-md-3">
+                        <article class="text-center social">
+                            <figure>
+                                <a href="#"><img src="img/foot-logo.png" alt="" class="img-responsive center-block"/></a>
+                            </figure>
+                            <p>Lorem ipsum dolor sit amet, consecol of</p>
+                            <p>adipisicing elit, sed do eiusmod tempor of into</p>
+                            <p>incididut ut labore et dore magna. </p>
+                            <ul class="list-inline list-unstyled">
+                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
+                                <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
+                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                            </ul>
+                        </article>
+                    </div>  
+                    <div class="col-md-3">
+                        <article class="twitter">
+                            <h3>Twitter Feeds</h3>
+                            <p class="back">
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="gold">@ACETIDESIGNERS,</span></a>
+                                Next Jobs Fair
+                            <p>
+                            <p>Will Be Held in Our Campus</p>
+                            <p><i>5 Mins Ago</i></p>
+                            <p class="line"></p>
+                            <p class="back">
+                                <a href="#"><span class="fa fa-twitter"></span></a>
+                                <a href="#"><span class="gold">@ACETIDESIGNERS,</span></a>
+                                Cafés offering
+                            </p>
+                            <p>restaurants a range of meals.</p>
+                            <p><i>12 Mins Ago</i></p>
+                        </article>
+                    </div>  
+                    <div class="col-md-3">
+                        <article class="contact">
+                            <h3>Contact Info</h3>
+                            <ul class="list-unstyled">
+                                <li>
+                                    <p>
+                                        <span class="fa fa-map-marker"></span>
+                                        House # 00, Road # 00, Block # ABC,
+                                    </p>
+                                    <p>Mirpur-11, Dhaka, Bangladesh</p>
+                                    <p class="line"></p>
+                                </li>
+                                <li>
+                                    <p>
+                                        <span class="fa fa-phone"></span>
+                                        +88 01719 45 75 93
+                                    </p>
+                                    <p class="line"></p>
+                                </li>
+                                <li>
+                                    <p>
+                                    <a href="mailto:info@yoursite.com"><span class="fa fa-send"></span>info@yoursite.com</a>
+                                    <p>
+                                        <p class="line"></p>
+                                </li>
+                                <li>
+                                    <p><span class="fa fa-mobile"></span>+88 1193 40 26 65</p>
+                                    <p class="line"></p>
+                                </li>
+                            </ul>
+                        </article>
+                    </div>  
+                    <div class="col-md-3">
+                        <article class="insta">
+                            <h3>Instagram</h3>
+                            <ul class="list-unstyled list-inline">
+                                <li>
+                                    <a href="#">
+                                        <img src="img/insta1.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                         <img src="img/insta2.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                         <img src="img/insta3.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                         <img src="img/insta4.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                         <img src="img/insta5.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                                <li>
+                                    <a href="#">
+                                         <img src="img/insta6.png" alt="" class="img-responsive"/>
+                                    </a>
+                                </li>
+                            </ul>
+                            <div class="instaHover">
+                                <span class="fa fa-search"></span>
+                            </div>
+                        </article>
+                    </div>  
+                </div>
+            </section>
+        </footer>
 
 
 
@@ -847,7 +1086,7 @@
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
-        <script src="js/jquery.easyResponsiveTabs.js" type="text/javascript"></script>
+        <script src="js/bootstrap-datetimepicker.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->
