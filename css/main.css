@@ -565,15 +565,24 @@ figure.chefPic{
 .insta img{
     width: 80px;
     height: 80px;
-    position: relative;
+}
+.instaHover a{
+    color: #fff;
+    font-size: 20px;
 }
 .instaHover {
-    font-size: 30px;
-    padding: 25px;
-    background-color: rgba(250,169,56,0.5);
+    padding: 25px 30px;
+    text-align: center;
+    background-color: rgba(250,169,56,0.9);
     position: absolute;
-    
+    top: 0;
+    bottom: 0;
+    right: 0;
+    left: 5px;
+    width: 80px;
+    height: 80px;
+    display: none;
 }
-.insta img:hover .instaHover{
+.insta li:hover .instaHover{
     display: block;
 }
