@@ -15,6 +15,7 @@
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css"/>
+        <link href="css/hover.css" rel="stylesheet" type="text/css"/>
         <link rel="stylesheet" href="css/main.css">
         <link href="css/responsive.css" rel="stylesheet" type="text/css"/>
         <script src="js/vendor/modernizr-2.8.3-respond-1.4.2.min.js"></script>
@@ -144,7 +145,7 @@
                         <article class="text-center">
                             <h2 class="gold">RosuiGhor</h2> 
                             <h2 class="divider"><span>Restaurant</span></h2>
-                            <p>
+                            <p class="sans">
                                 Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
                                 sed do eiusmod incididunt ut labore et dolore magna aliqua. 
                                 Ut enim ad minim veniam, quis nostrud exercitation ullamco 
@@ -311,7 +312,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/din-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/din.png" alt="" class="img-responsive center-block din"/>
                                     <p>Fine dinning</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -324,7 +324,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/coffee-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/coffee.png" alt="" class="img-responsive center-block din"/>
                                     <p>Coffee Shop</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -337,7 +336,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/buffet-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/buffet.png" alt="" class="img-responsive center-block din"/>
                                     <p>Buffet Service</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -350,7 +348,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/bar-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/bar.png" alt="" class="img-responsive center-block din"/>
                                     <p>Drinks & Bar</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -363,7 +360,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/shop-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/shop.png" alt="" class="img-responsive center-block din"/>
                                     <p>Online Store</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -376,7 +372,6 @@
                                 </figure>
                                 <div class="dinnerHover">
                                     <img src="img/cater-w.png" alt="" class="img-responsive center-block din-w"/>
-                                    <img src="img/cater.png" alt="" class="img-responsive center-block din"/>
                                     <p>Catering Service</p>
                                     <a href="#" class="goldRound">Read more</a>
                                 </div>
@@ -806,31 +801,34 @@
             <section class="ourChef">
                 <div class="container">
                     <h2 class="vibes divider text-center">Our Experienced Chefs</h2>
-                    <figure class="chefPic">
-                        <img src="img/Chef.png" alt="" class="img-responsive"/>
-                    </figure>
-
-                    <article class="chef">
-                        <figure class="center-block bord">
-                            <img src="img/black-yellow.png" alt="" class="img-responsive"/>
+                    <div>
+                        <figure class="chefPic">
+                            <img src="img/Chef.png" alt="" class="img-responsive"/>
                         </figure>
-                        <div class="chefHover">
-                            <h4 class="vibes">Lauren Greene</h4>
-                            <h5>Chef de partie</h5>
-                            <p>
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
-                                do eiusmod tempor too incididi labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud it exercitation ulmco 
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur 
-                                dolor in repreherit into volu velit esse cillum dolore eu fugiat 
-                                nulla pariatur. Excepteur sint occaecat cupidatati non proit, sunt 
-                                in culpa qui officia deserunt to mollit anim id est laborum. 
-                            </p>
-                            <figure class="pull-left">
-                                <img src="img/signature.png" alt="" class="img-responsive"/>
-                            </figure>
+                        <div class="chefBlack">
+                            <div class="backgroundWrap">
+                                <div class="backgroundInner">
+                                    <div class="chef">
+                                        <h4 class="vibes">Lauren Greene</h4>
+                                        <h5>Chef de partie</h5>
+                                        <p>
+                                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed 
+                                            do eiusmod tempor too incididi labore et dolore magna aliqua. 
+                                            Ut enim ad minim veniam, quis nostrud it exercitation ulmco 
+                                            laboris nisi ut aliquip ex ea commodo consequat. Duis aute irur 
+                                            dolor in repreherit into volu velit esse cillum dolore eu fugiat 
+                                            nulla pariatur. Excepteur sint occaecat cupidatati non proit, sunt 
+                                            in culpa qui officia deserunt to mollit anim id est laborum. 
+                                        </p>
+                                        <figure>
+                                            <img src="img/signature.png" alt="" class="img-responsive"/>
+                                        </figure>
+
+                                    </div>
+                                </div>
+                            </div>
                         </div>
-                    </article>
+                    </div>
                 </div>
             </section>
 
@@ -890,10 +888,11 @@
             <section class="blog">
                 <div class="container">
                     <h2 class="vibes divider text-center">Latest Blog & News</h2>
+                    <article class="blogNews">
                     <div class="row">
                         <div class="col-xs-2 news">
-                            <p>09</p> 
-                            <p>NOV</p>
+                            <p><a href="#">09</a></p> 
+                            <p><a href="#">NOV</a></p>
                         </div> 
                         <div class="col-xs-10">
                             <article>
@@ -917,8 +916,8 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-2 news">
-                            <p>24</p> 
-                            <p>NOV</p>
+                            <p><a href="#">24</a></p> 
+                            <p><a href="#">NOV</a></p>
                         </div> 
                         <div class="col-xs-10">
                             <article>
@@ -935,8 +934,8 @@
                     </div>
                     <div class="row">
                         <div class="col-xs-2 news">
-                            <p>27</p> 
-                            <p>NOV</p>
+                            <p><a href="#">27</a></p> 
+                            <p><a href="#">NOV</a></p>
                         </div> 
                         <div class="col-xs-10">
                             <article>
@@ -951,6 +950,7 @@
                             </article>
                         </div>
                     </div>
+                </article>
                 </div>
             </section>
         </main>
@@ -977,7 +977,7 @@
                     </div>  
                     <div class="col-md-3">
                         <article class="twitter">
-                            <h3>Twitter Feeds</h3>
+                            <h3 class="sans">Twitter Feeds</h3>
                             <p class="back">
                                 <a href="#"><span class="fa fa-twitter"></span></a>
                                 <a href="#"><span class="gold">@ACETIDESIGNERS,</span></a>
@@ -997,31 +997,31 @@
                     </div>  
                     <div class="col-md-3">
                         <article class="contact">
-                            <h3>Contact Info</h3>
+                            <h3 class="sans">Contact Info</h3>
                             <ul class="list-unstyled">
                                 <li>
                                     <p>
-                                        <span class="fa fa-map-marker"></span>
+                                        <span class="fa fa-map-marker gold"></span>
                                         House # 00, Road # 00, Block # ABC,
                                     </p>
-                                    <p>Mirpur-11, Dhaka, Bangladesh</p>
+                                    <p class="dhaka">Mirpur-11, Dhaka, Bangladesh</p>
                                     <p class="line"></p>
                                 </li>
                                 <li>
                                     <p>
-                                        <span class="fa fa-phone"></span>
+                                        <span class="fa fa-phone gold hvr-buzz"></span>
                                         +88 01719 45 75 93
                                     </p>
                                     <p class="line"></p>
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="mailto:info@yoursite.com"><span class="fa fa-send"></span>info@yoursite.com</a>
+                                        <a href="mailto:info@yoursite.com"><span class="fa fa-send gold"></span>info@yoursite.com</a>
                                     <p>
                                     <p class="line"></p>
                                 </li>
                                 <li>
-                                    <p><span class="fa fa-mobile"></span>+88 1193 40 26 65</p>
+                                    <p><span class="fa fa-mobile gold"></span>+88 1193 40 26 65</p>
                                     <p class="line"></p>
                                 </li>
                             </ul>
@@ -1029,7 +1029,7 @@
                     </div>  
                     <div class="col-md-3">
                         <article class="insta">
-                            <h3>Instagram</h3>
+                            <h3 class="sans">Instagram</h3>
                             <ul class="list-unstyled list-inline">
                                 <li>
                                     <a href="#">
@@ -1083,6 +1083,9 @@
                         </article>
                     </div>  
                 </div>
+            </section>
+            <section class="footerBottom">
+                <p class="text-center">&COPY;2016 ROSUI GHOR |DESIGNED BY <span class="gold">ACETIDESIGNERS</span></p>
             </section>
         </footer>
 

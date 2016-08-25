@@ -265,6 +265,13 @@ img.din-w{
 .dinner .dinnerHover a{
     display: inline-block;
 }
+.dinnerHover a.goldRound{
+    transition: 2s;
+}
+.dinner:hover .dinnerHover a{
+    display: inline-block;
+    margin: 0 auto;
+}
 /****************SECTION "food" ******************/
 .food{
     background: url("style-images/wood1.png")no-repeat center center;
@@ -367,16 +374,37 @@ figure.chefPic{
     height: 150px;
     width: 150px;
     margin: 0 auto;
+    margin-bottom: 15px;
 }
 .ourChef{
     margin-bottom: 50px;
     position: relative;
+}
+.chef{
+    padding: 20px;
+}
+.chef p{
+    color: #828282;
 }
 .chef h4{
     font-family: 'Philosopher', sans-serif;
 }
 .chef h5{
     color: #fff;
+}
+.chefBlack{
+    background-color: #252525;
+    box-shadow: 10px 10px 0 #d4af37;
+    padding: 20px 10px 10px 2px;
+}
+.backgroundWrap{
+    background-image: url("style-images/border-top.png"), url("style-images/border-bottom.png");
+    background-position: right top, left bottom;
+    background-repeat: no-repeat;
+    padding: 20px;
+}
+.backgroundInner{
+    border: 1px solid #d4af37;
 }
 /*
 .chefHover {
@@ -403,6 +431,7 @@ figure.chefPic{
        padding-bottom: 20px;
 }
 */
+/*
 .chef{
     position: relative;
     max-width: 920px;
@@ -443,7 +472,7 @@ figure.chefPic{
 .chefHover figure{
     height: 50px;
 }
-
+*/
 /****************SECTION "reservation" ******************/
 .reservation{
     background: #111;
@@ -480,7 +509,27 @@ figure.chefPic{
     color: #fff;
     background-color: #d4af37;
 }
+
+.reservation  select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-size: .9em;
+    background: url(style-images/arrow.png)no-repeat right 8px;
+    background-size: 20px 20px;
+    padding: 2px 10px 2px 5px;   
+    border: 1px solid #2f2f2f;
+    color: #666;
+}
+.reservation  select::-ms-expand{
+    display: none;
+}
 /****************SECTION "blog" ******************/
+.blogNews{
+    padding: 10px;
+}
 .blog .row{
     background: #252525;
     color: #fff;
@@ -494,20 +543,34 @@ figure.chefPic{
 .blog .news p{
     margin: 0;
     line-height: 1em;
-    border: 1px solid #d4af37;;
+    border: 1px solid #d4af37;
     background: #d4af37;
     padding: 10px;
     padding-bottom: 0;
     width: 50px;
     margin: 0 auto;
-    text-align: left;
+    text-align: center;
 }
 .blog .news p:last-of-type{
     padding-bottom: 10px;
     padding-top: 0;
 }
+.blog .news:hover p{
+    background: #fff;
+    color: #d4af37;
+    border: none;
+}
+.blog .news:hover a{
+    color: #d4af37;
+}
 .blog span{
     padding-right: 5px;
+}
+.blog a{
+    color: #fff;
+}
+.blog a:hover{
+    color: #d4af37;
 }
 .blog ul{
     color: #c2c2c2;
@@ -518,6 +581,9 @@ figure.chefPic{
 /****************SECTION "footerTop" ******************/
 .footerTop{
     background: #1e1e1e;
+}
+.footerTop h3{
+    color: #fff;
 }
 .footerTop p,
 .footerTop ul,
@@ -539,6 +605,19 @@ figure.chefPic{
     padding-right: 15px;
     margin-top: 15px;
 }
+.social span.fa-facebook:hover{
+    color: #3b5999;
+}
+.social span.fa-twitter:hover{
+    color: #1da1f3;
+}
+.social span.fa-pinterest-p:hover,
+.social span.fa-google-plus:hover{
+    color: #c92229;
+}
+.social span.fa-dribbble:hover{
+    color: #f14cb9;
+}
 .line{
     border-bottom: 1px solid #20282d;
     margin: 30px 0 30px;
@@ -555,6 +634,18 @@ figure.chefPic{
 }
 .contact .line{
     margin: 10px 0;
+}
+.contact span{
+    padding-right: 10px;
+}
+.contact p.dhaka{
+    padding-left: 20px;
+}
+.contact a:hover{
+    color: #d4af37;
+}
+.insta ul{
+    text-align: center;
 }
 .insta ul li{
     width: 30%;
@@ -584,4 +675,14 @@ figure.chefPic{
 }
 .insta li:hover .instaHover{
     display: block;
+}
+/****************SECTION "footerBottom" ******************/
+.footerBottom{
+    background: #111;
+}
+.footerBottom p{
+    font-size: 12px;
+    color: #7d7d7d;
+    padding: 15px 0;
+    margin: 0;
 }
