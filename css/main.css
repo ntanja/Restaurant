@@ -234,7 +234,7 @@ main{
     text-align: center;
 }
 .dinnerHover p{
-    padding: 20px 0;
+    padding: 15px 0 5px;
 }
 img.din{
     display: none;
@@ -263,11 +263,7 @@ img.din-w{
     transition: 1s;
 }
 .dinner .dinnerHover a{
-    display: none;
-}
-.dinner:hover .dinnerHover a{
     display: inline-block;
-    margin: 0 auto;
 }
 /****************SECTION "food" ******************/
 .food{
@@ -465,6 +461,9 @@ figure.chefPic{
 .reservation .form-control::-moz-placeholder {
     color: #666;
     opacity: 1;
+}
+.reservation .form-control:focus {
+    border-color: #d4af37;
 }
 .people {
     margin-bottom: 15px;
