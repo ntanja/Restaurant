@@ -1,5 +1,5 @@
 
-/********GENERAL SETTINGS********/
+/********GENERAL SETTINGS******** background: rgba(250,223,129,0.3)*/ 
 p,a{
     font-family: 'Philosopher', sans-serif;
 }
@@ -56,7 +56,11 @@ header{
     margin-top: -10px;
     padding-left: 20px;
 }
-.navbar-brand > img {
+
+.navImg-up{ 
+    width: 50px;
+}
+.navImg-down{
     width: 50px;
 }
 .navbar-default .navbar-collapse, .navbar-default .navbar-form {
