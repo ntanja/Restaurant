@@ -1,8 +1,43 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
-    
-     .dinner .dinnerHover a{
+    main{
+        margin-top: 0;
+    }
+    /****************HEADER-NAVIGATION******************/
+    header{
+        background: transparent;
+    }
+    .navbar-brand {
+        padding-left: 80px;
+    }
+    .navbar-brand img {
+        -webkit-transition: -webkit-transform .8s ease-in-out;
+        transition: transform .8s ease-in-out;
+    }
+    .navbar-brand img:hover {
+        -webkit-transform: rotate(360deg);
+        transform: rotate(360deg);
+    }
+    /*****************SECTION 1 - CAROUSEL***********/
+    .carousel-caption {
+        padding-top: 8%;
+    }
+    .delicious h1 {
+        font-size: 40px;
+    }
+    .firstSlider p{
+        display: block;
+    }
+    /****************SECTION "hours" ******************/
+    .hours .col-sm-4 p {
+        padding: 50px 0 10px;
+    }
+    /****************SECTION "services" ******************/
+    .dinnerHover{
+        padding-top: 40px;
+    }
+    .dinner .dinnerHover a{
         display: none;
     }
     .dinner:hover .dinnerHover a{
@@ -10,21 +45,275 @@
         margin: 0 auto;
     }
     .dinnerHover a.goldRound{
-        transition: 2s;
+        transition: 3s;
     }
-   .dinnerHover:hover a.goldRound{
-        transition: 2s;
+    .dinnerHover:hover a.goldRound{
+        transition: 3s;
+    }
+    /****************SECTION "reservation" ******************/
+    .reservation .row {
+        margin-bottom: 40px;
+    }
+    .vibes {
+        margin-top: 50px;
+    }
+    /****************SECTION "blog" ******************/
+    .blog ul {
+        padding-bottom: 15px;
+    }
+    /****************SECTION "footerTop" ******************/
+    .social img{
+        margin: 30px auto; 
+        -webkit-transition: -webkit-transform .9s ease-in-out;
+        transition: transform .9s ease-in-out;
+    }
+    .social img:hover{
+        -webkit-transform: rotateY(360deg); /* Safari */
+        transform: rotateY(360deg);
+    }
+    .line{
+        margin: 30px 150px 30px;
+    }
+    .contact .line{
+        margin: 10px 150px;
+    }
+    .insta img{
+        margin: 0 auto;
+    }
+    .insta ul li{
+        padding-bottom: 35px;
+    }
+    .instaHover{
+        margin: 0 auto;
+        left: 0;
     }
 }     
 
-
 /* Medium devices (desktops, 992px and up) */
-@media (min-width: 992px) {     
-
-    
+@media (min-width: 992px) {  
+    /********GENERAL SETTINGS********/
+    .restaurant,
+    .services,
+    .food,
+    .reservation{
+        padding: 40px 0;
+    }
+    /****************HEADER-NAVIGATION******************/
+    .navbar-brand > img {
+        width: 80px;
+    }
+    .navbar-default .navbar-nav > li > a {
+        font-size: 18px;
+        padding-top: 30px;
+    }
+    /*****************SECTION 1 - CAROUSEL***********/
+    .delicious p {
+        font-size: 20px;
+    }
+    .delicious h1 {
+        font-size: 70px;
+    }
+    /****************SECTION "services" ******************/
+    .dinnerHover {
+        padding-top: 25px;
+    }
+    /****************SECTION "food" ******************/
+    .foodBck {
+        margin-right: 50px;
+        margin-left: 50px;
+    }
+    .foodBck .breakfast{
+        padding: 0;
+        border-right: 2px solid #000;
+    }
+    /****************SECTION "ourChef" ******************/
+    .chefBlack {
+        padding-left: 100px;
+        width: 70%;
+    }
+    figure.chefPic {
+        height: 400px;
+        width: 350px;
+        margin: 0;
+        top: -25px;
+        left: -55px;
+        right: 0;
+        bottom: 0;
+        position: absolute
+    }
+    .chefPic img{
+        max-width: 100%;
+        max-height: 100%;
+    }
+    /****************SECTION "reservation" ******************/
+    .reservation h2{
+        margin-top: 10px;
+        margin-bottom: 30px;
+    }
+    .reservation form{
+        margin: 0 auto;
+        padding: 20px;
+    }
+    .reservation button {
+        width: 97%;
+        margin-top: 25px;
+    }
+    .reservation .row{
+        padding: 30px;
+    }
+    /****************SECTION "footerTop" ******************/
+    .footerTop{
+        padding-top: 30px;
+        padding-bottom: 30px;
+    }
+    .footRow{
+        padding-right: 5px;
+        padding-left: 10px;
+        font-size: 12px;
+        border-right: 1px solid #2e2e2e;
+    }
+    .footRow:last-of-type{
+        border-right: none;
+    }
+    .social ul{
+        margin-top: 30px;
+    }
+    .footerTop p{
+        text-align: left;
+    }
+    .footerTop h3{
+        text-align: left;
+        margin-bottom: 15px;
+    }
+    .line {
+        margin: 30px 10px;
+    }
+    .contact .line {
+        margin: 15px 10px;
+    }
+    .insta img{
+        width: 60px;
+        height: 60px;
+    }
+    .insta ul li {
+        padding-bottom: 20px;
+    }
+    .instaHover{
+        padding: 15px 10px;
+        width: 60px;
+        height: 60px;
+    }
 }
+
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    /********GENERAL SETTINGS********/
+    .restaurant,
+    .wood,
+    .services,
+    .food,
+    .ourChef,
+    .reservation,
+    .blog{
+        padding: 120px 0;
+        margin-bottom: 0;
+    }
+    .services h2,
+    .food h2,
+    .ourChef h2,
+    .reservation h2,
+    .blog h2{
+        margin-top: 0;
+        margin-bottom: 75px;
+        font-size: 48px;
+    }
+    /****************HEADER-NAVIGATION******************/
+    .navbar-brand > img {
+        width: 170px;
+    }
+    .navbar-nav {
+        padding-left: 50px;
+    }
+    /*****************SECTION 1 - CAROUSEL***********/
+    .carousel-caption {
+        padding-top: 10%;
+    }
+    .delicious h1 {
+        font-size: 100px;
+    }
+    .delicious p {
+        font-size: 24px;
+    }
+    .restaurant h2{
+        font-size: 60px;
+    }
+    /****************SECTION "wood" ******************/
+    .wood .carousel-control .glyphicon-chevron-left, .wood .carousel-control .icon-prev {
+        margin-left: -35px;
+    }
+    .wood .carousel-control .glyphicon-chevron-right, .wood .carousel-control .icon-next {
+        margin-right: -35px;
+    }
+    .wood .carousel-indicators {
+        bottom: -35px;
+    }
+    .wood .item h3{
+        font-size: 36px;
+    }
+    /****************SECTION "services" ******************/
+    .dinnerHover {
+        padding-top: 45px;
+    }
+    /****************SECTION "food" ******************/
+    .foodBck {
+        margin-right: -15px;
+        margin-left: -15px;
+    }
+    .icons1, .icons2, .icons3, .icons4 {
+        width: 90px;
+        height: 140px;
+    }
+    .food li h5 {
+        margin-top: 50px;
+    }
+    .food .tab-content{
+        padding-top: 30px;
+    }
+    /****************SECTION "ourChef" ******************/
+    .chefLauren {
+        padding-left: 75px;
+    }
+    figure.chefPic {
+        height: 545px;
+        left: -25px;
+        top: -10px;
+    }
+    .chefBlack {
+        padding: 50px 50px 50px 160px;
+        width: 80%;
+    }
+    /****************SECTION "reservation" ******************/
+    .reservation form{
+        padding: 0 70px;
+    }
+    /****************SECTION "footerTop" ******************/
+    .footerTop {
+        padding-top: 80px;
+        padding-bottom: 80px;
+    }
+    .insta img {
+        width: 70px;
+        height: 70px;
+    }
+    .instaHover {
+        padding: 20px 10px;
+        width: 70px;
+        height: 70px;
+    }
+    /****************SECTION "footerBottom" ******************/
+    .footerBottom p {
+        padding: 25px 0;
+    }
 
 }
 

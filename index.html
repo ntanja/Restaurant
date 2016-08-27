@@ -10,6 +10,7 @@
         <meta name="description" content="">
         <meta name="viewport" content="width=device-width, initial-scale=1">
         <link rel="stylesheet" href="http://cdnjs.cloudflare.com/ajax/libs/font-awesome/4.6.3/css/font-awesome.min.css">
+        <link href="//maxcdn.bootstrapcdn.com/font-awesome/4.2.0/css/font-awesome.min.css" rel="stylesheet" media="all">
         <link href="https://fonts.googleapis.com/css?family=Philosopher" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
@@ -24,8 +25,9 @@
 
         <header>
 
-            <nav class="navbar navbar-default">
-                <div class="container">
+            <!-- NAVIGATION -->
+            <div class="container">
+                <nav class="navbar navbar-default">
                     <!-- Brand and toggle get grouped for better mobile display -->
                     <div class="navbar-header">
                         <button type="button" class="navbar-toggle collapsed" data-toggle="collapse" data-target="#bs-example-navbar-collapse-1" aria-expanded="false">
@@ -51,13 +53,14 @@
                             <li><a href="#">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
-                </div><!-- /.container-fluid -->
-            </nav>
 
+                </nav>
+            </div><!-- /.container -->
+            <!-- NAVIGATION end-->
         </header>
 
         <main>
-
+            <!-- FIRST CAROUSEL start-->
             <div id="carousel-example-generic" class="carousel slide" data-ride="carousel">
                 <!-- Indicators -->
                 <ol class="carousel-indicators">
@@ -80,8 +83,7 @@
                         <img src="img/main2.jpg" alt="" class="img-responsive"/>
                         <div class="carousel-caption text-center delicious">
                             <h1 class="vibes">Yummy! Delicious!</h1>
-                            <p>Love of beauty is taste. The creation of beauty is art.</p>
-                            <img src="img/border.png" alt="" class="img-responsive"/>
+                            <p class="flower"><span>Love of beauty is taste. The creation of beauty is art.</span></p>
                         </div>
                     </div>
                     <div class="item firstSlider">
@@ -104,7 +106,9 @@
                     <span class="sr-only">Next</span>
                 </a>
             </div>
+            <!-- FIRST CAROUSEL end-->
 
+            <!-- SECTION "hours" start-->
             <section class="hours">
                 <div class="container">
                     <div class="row">
@@ -138,47 +142,54 @@
                     </div>
                 </div>
             </section>
+            <!-- SECTION "hours" end-->
 
+            <!-- SECTION "restaurant" start-->
             <section class="restaurant">
-                <div class="row">
-                    <div class="col-md-6">
-                        <article class="text-center">
-                            <h2 class="gold">RosuiGhor</h2> 
-                            <h2 class="divider"><span>Restaurant</span></h2>
-                            <p class="sans">
-                                Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
-                                sed do eiusmod incididunt ut labore et dolore magna aliqua. 
-                                Ut enim ad minim veniam, quis nostrud exercitation ullamco 
-                                laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
-                                irure dolor in reprehenderit in voluptate velit esse cillum 
-                                dolore eu fugiat nulla to the ongoing  end of this specific 
-                                paragraph pariatur. end line. 
-                            </p>
-                            <a href="#" class="goldLink">Learn more</a>
-                        </article>
-                    </div>
-                    <div class="col-md-6">
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <article>
-                                    <figure>
-                                        <img src="img/restaurant-first.png" alt="" class="img-responsive center-block"/>
-                                    </figure>
-                                </article>
-                            </div>
-                            <div class="col-sm-6">
-                                <article>
-                                    <figure>
-                                        <img src="img/restaurant-second.png" alt="" class="img-responsive center-block"/>
-                                    </figure>
-                                </article>
+                <div class="container">
+                    <div class="row center-block">
+                        <div class="col-md-6">
+                            <article class="text-center">
+                                <h2 class="gold">RosuiGhor</h2> 
+                                <h2 class="divider"><span>Restaurant</span></h2>
+                                <p class="sans">
+                                    Lorem ipsum dolor sit amet, consectetur adipisicing elit, 
+                                    sed do eiusmod incididunt ut labore et dolore magna aliqua. 
+                                    Ut enim ad minim veniam, quis nostrud exercitation ullamco 
+                                    laboris nisi ut aliquip ex ea commodo consequat. Duis aute 
+                                    irure dolor in reprehenderit in voluptate velit esse cillum 
+                                    dolore eu fugiat nulla to the ongoing  end of this specific 
+                                    paragraph pariatur. end line. 
+                                </p>
+                                <a href="#" class="goldLink hvr-float">Learn more</a>
+                            </article>
+                        </div>
+                        <div class="col-md-6">
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <article>
+                                        <figure>
+                                            <img src="img/restaurant-first.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                    </article>
+                                </div>
+                                <div class="col-sm-6">
+                                    <article>
+                                        <figure>
+                                            <img src="img/restaurant-second.png" alt="" class="img-responsive center-block"/>
+                                        </figure>
+                                    </article>
+                                </div>
                             </div>
                         </div>
                     </div>
                 </div>
-            </section>
+            </section> 
+            <!-- SECTION "restaurant" end-->
 
+            <!-- SECTION "wood" start-->
             <section class="wood">
+                <!-- SECOND CAROUSEL start-->
                 <div id="carousel-example-generic1" class="carousel slide" data-ride="carousel">
                     <!-- Indicators -->
                     <ol class="carousel-indicators">
@@ -222,7 +233,7 @@
                                     </div>  
                                 </div>
                             </div>
-                        </div>
+                        </div> 
                         <div class="item">
                             <div class="container">
                                 <div class="row">
@@ -299,8 +310,11 @@
                         <span class="sr-only">Next</span>
                     </a>
                 </div>
+                <!-- SECOND CAROUSEL end-->
             </section>
+            <!-- SECTION "wood" end-->
 
+            <!-- SECTION "services" start-->
             <section class="services">
                 <div class="container">
                     <h2 class="vibes divider text-center">Our Awesome Services</h2>
@@ -313,7 +327,7 @@
                                 <div class="dinnerHover">
                                     <img src="img/din-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Fine dinning</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
@@ -325,7 +339,7 @@
                                 <div class="dinnerHover">
                                     <img src="img/coffee-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Coffee Shop</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
@@ -337,7 +351,7 @@
                                 <div class="dinnerHover">
                                     <img src="img/buffet-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Buffet Service</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
@@ -349,7 +363,7 @@
                                 <div class="dinnerHover">
                                     <img src="img/bar-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Drinks & Bar</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
@@ -361,7 +375,7 @@
                                 <div class="dinnerHover">
                                     <img src="img/shop-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Online Store</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
@@ -373,19 +387,21 @@
                                 <div class="dinnerHover">
                                     <img src="img/cater-w.png" alt="" class="img-responsive center-block din-w"/>
                                     <p>Catering Service</p>
-                                    <a href="#" class="goldRound">Read more</a>
+                                    <a href="#" class="goldRound hvr-bounce-in">Read more</a>
                                 </div>
                             </article>
                         </div>
                     </div>
                 </div>
             </section>
+            <!-- SECTION "services" end-->
 
+            <!-- SECTION "food" start-->
             <section class="food">
                 <div class="container">
                     <h2 class="vibes divider text-center">Our Food Menu</h2>
                     <div class="row foodBck">
-                        <div class="col-md-3">
+                        <div class="col-md-4 breakfast">
                             <ul class="nav nav-pills nav-stacked" id="myTabs">
                                 <li role="presentation" class="active" >
                                     <div class="row">
@@ -433,7 +449,7 @@
                                 </li>
                             </ul>
                         </div>
-                        <div class="col-md-9">
+                        <div class="col-md-8">
                             <div class="tab-content">
                                 <div class="tab-pane active" id="breakfast">
                                     <div class="row">
@@ -797,11 +813,13 @@
                     </div>
                 </div>
             </section>
+            <!-- SECTION "food" end-->
 
+            <!-- SECTION "ourChef" start-->
             <section class="ourChef">
                 <div class="container">
                     <h2 class="vibes divider text-center">Our Experienced Chefs</h2>
-                    <div>
+                    <div class="chefLauren">
                         <figure class="chefPic">
                             <img src="img/Chef.png" alt="" class="img-responsive"/>
                         </figure>
@@ -823,7 +841,6 @@
                                         <figure>
                                             <img src="img/signature.png" alt="" class="img-responsive"/>
                                         </figure>
-
                                     </div>
                                 </div>
                             </div>
@@ -831,7 +848,9 @@
                     </div>
                 </div>
             </section>
+            <!-- SECTION "ourChef" end-->
 
+            <!-- SECTION "reservation" start-->
             <section class="reservation">
                 <div class="container">
                     <h2 class="vibes divider text-center">Make a Reservation</h2>
@@ -884,98 +903,104 @@
                     </form>
                 </div>
             </section>
+            <!-- SECTION "reservation" end-->
 
+            <!-- SECTION "blog" start-->
             <section class="blog">
                 <div class="container">
                     <h2 class="vibes divider text-center">Latest Blog & News</h2>
                     <article class="blogNews">
-                    <div class="row">
-                        <div class="col-xs-2 news">
-                            <p><a href="#">09</a></p> 
-                            <p><a href="#">NOV</a></p>
-                        </div> 
-                        <div class="col-xs-10">
-                            <article>
-                                <a href="#">
-                                    In-N-Out Is Running Out Of Yellow Chilies And Everyone Is Freaking Out
-                                </a>
-                                <ul class="list-inline list-unstyled first">
-                                    <li><span class="fa fa-comments-o"></span>17</li>
-                                    <li><span class="fa fa-eye"></span>124</li>
-                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
-                                </ul>
-                                <p>
-                                    Sed ut perspiciatis unde omnis iste natus to it error sit too 
-                                    voluptatem accusantium dolorea nor udantium, totam for aperiam, 
-                                    ipsa too quae  aend ab illo inventore to end. Sed ut perspiciatis 
-                                    unde omnis iste natus to it error sit too voluptatem accusantium 
-                                    dolorea nor udantium.
-                                </p>
-                            </article>
+                        <div class="row">
+                            <div class="col-xs-2 news">
+                                <p><a href="#">09</a></p> 
+                                <p><a href="#">NOV</a></p>
+                            </div> 
+                            <div class="col-xs-10">
+                                <article>
+                                    <a href="#">
+                                        In-N-Out Is Running Out Of Yellow Chilies And Everyone Is Freaking Out
+                                    </a>
+                                    <ul class="list-inline list-unstyled first">
+                                        <li><span class="fa fa-comments-o"></span>17</li>
+                                        <li><span class="fa fa-eye"></span>124</li>
+                                        <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                    </ul>
+                                    <p>
+                                        Sed ut perspiciatis unde omnis iste natus to it error sit too 
+                                        voluptatem accusantium dolorea nor udantium, totam for aperiam, 
+                                        ipsa too quae  aend ab illo inventore to end. Sed ut perspiciatis 
+                                        unde omnis iste natus to it error sit too voluptatem accusantium 
+                                        dolorea nor udantium.
+                                    </p>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 news">
-                            <p><a href="#">24</a></p> 
-                            <p><a href="#">NOV</a></p>
-                        </div> 
-                        <div class="col-xs-10">
-                            <article>
-                                <a href="#">
-                                    Carl's Jr. Made An In-N-Out Inspired Burger & We Ate Both Side-By-Side
-                                </a>
-                                <ul class="list-inline list-unstyled">
-                                    <li><span class="fa fa-comments-o"></span>17</li>
-                                    <li><span class="fa fa-eye"></span>124</li>
-                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
-                                </ul>
-                            </article>
+                        <div class="row">
+                            <div class="col-xs-2 news">
+                                <p><a href="#">24</a></p> 
+                                <p><a href="#">NOV</a></p>
+                            </div> 
+                            <div class="col-xs-10">
+                                <article>
+                                    <a href="#">
+                                        Carl's Jr. Made An In-N-Out Inspired Burger & We Ate Both Side-By-Side
+                                    </a>
+                                    <ul class="list-inline list-unstyled">
+                                        <li><span class="fa fa-comments-o"></span>17</li>
+                                        <li><span class="fa fa-eye"></span>124</li>
+                                        <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                    </ul>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                    <div class="row">
-                        <div class="col-xs-2 news">
-                            <p><a href="#">27</a></p> 
-                            <p><a href="#">NOV</a></p>
-                        </div> 
-                        <div class="col-xs-10">
-                            <article>
-                                <a href="#">
-                                    Buy One 7-Eleven Slurpee And Get The Second FREE, All Weekend [DEALS] 
-                                </a>
-                                <ul class="list-inline list-unstyled">
-                                    <li><span class="fa fa-comments-o"></span>17</li>
-                                    <li><span class="fa fa-eye"></span>124</li>
-                                    <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
-                                </ul>
-                            </article>
+                        <div class="row">
+                            <div class="col-xs-2 news">
+                                <p><a href="#">27</a></p> 
+                                <p><a href="#">NOV</a></p>
+                            </div> 
+                            <div class="col-xs-10">
+                                <article>
+                                    <a href="#">
+                                        Buy One 7-Eleven Slurpee And Get The Second FREE, All Weekend [DEALS] 
+                                    </a>
+                                    <ul class="list-inline list-unstyled">
+                                        <li><span class="fa fa-comments-o"></span>17</li>
+                                        <li><span class="fa fa-eye"></span>124</li>
+                                        <li><span class="fa fa-bookmark-o"></span>Food, Travel</li>
+                                    </ul>
+                                </article>
+                            </div>
                         </div>
-                    </div>
-                </article>
+                    </article>
                 </div>
             </section>
+            <!-- SECTION "blog" end-->
         </main>
 
+        <!-- FOOTER start-->
         <footer>
+            <!-- SECTION "footerTop" start-->
             <section class="footerTop">
                 <div class="row">
-                    <div class="col-md-3">
+                    <div class="col-md-3 footRow">
                         <article class="text-center social">
                             <figure>
                                 <a href="#"><img src="img/foot-logo.png" alt="" class="img-responsive center-block"/></a>
                             </figure>
-                            <p>Lorem ipsum dolor sit amet, consecol of</p>
-                            <p>adipisicing elit, sed do eiusmod tempor of into</p>
-                            <p>incididut ut labore et dore magna. </p>
+                            <p>
+                                Lorem ipsum dolor sit amet, consecol of adipisicing elit, 
+                                sed do eiusmod tempor of into incididut ut labore et dore magna. 
+                            </p>
                             <ul class="list-inline list-unstyled">
-                                <li><a href="#"><span class="fa fa-facebook"></span></a></li>
-                                <li><a href="#"><span class="fa fa-twitter"></span></a></li>
-                                <li><a href="#"><span class="fa fa-dribbble"></span></a></li>
-                                <li><a href="#"><span class="fa fa-pinterest-p"></span></a></li>
-                                <li><a href="#"><span class="fa fa-google-plus"></span></a></li>
+                                <li><a href="#" class="hvr-buzz-out"><span class="fa fa-facebook"></span></a></li>
+                                <li><a href="#" class="hvr-buzz-out"><span class="fa fa-twitter"></span></a></li>
+                                <li><a href="#" class="hvr-buzz-out"><span class="fa fa-dribbble"></span></a></li>
+                                <li><a href="#" class="hvr-buzz-out"><span class="fa fa-pinterest-p"></span></a></li>
+                                <li><a href="#" class="hvr-buzz-out"><span class="fa fa-google-plus"></span></a></li>
                             </ul>
                         </article>
                     </div>  
-                    <div class="col-md-3">
+                    <div class="col-md-3 footRow">
                         <article class="twitter">
                             <h3 class="sans">Twitter Feeds</h3>
                             <p class="back">
@@ -995,13 +1020,13 @@
                             <p><i>12 Mins Ago</i></p>
                         </article>
                     </div>  
-                    <div class="col-md-3">
+                    <div class="col-md-3 footRow">
                         <article class="contact">
                             <h3 class="sans">Contact Info</h3>
                             <ul class="list-unstyled">
                                 <li>
                                     <p>
-                                        <span class="fa fa-map-marker gold"></span>
+                                        <span class="fa fa-map-marker gold hvr-sink"></span>
                                         House # 00, Road # 00, Block # ABC,
                                     </p>
                                     <p class="dhaka">Mirpur-11, Dhaka, Bangladesh</p>
@@ -1016,18 +1041,18 @@
                                 </li>
                                 <li>
                                     <p>
-                                        <a href="mailto:info@yoursite.com"><span class="fa fa-send gold"></span>info@yoursite.com</a>
+                                        <a href="mailto:info@yoursite.com"><span class="fa fa-send gold hvr-float"></span>info@yoursite.com</a>
                                     <p>
                                     <p class="line"></p>
                                 </li>
                                 <li>
-                                    <p><span class="fa fa-mobile gold"></span>+88 1193 40 26 65</p>
+                                    <p><span class="fa fa-mobile gold hvr-buzz"></span>+88 1193 40 26 65</p>
                                     <p class="line"></p>
                                 </li>
                             </ul>
                         </article>
                     </div>  
-                    <div class="col-md-3">
+                    <div class="col-md-3 footRow">
                         <article class="insta">
                             <h3 class="sans">Instagram</h3>
                             <ul class="list-unstyled list-inline">
@@ -1084,10 +1109,15 @@
                     </div>  
                 </div>
             </section>
+            <!-- SECTION "footerTop" end-->
+
+            <!-- SECTION "footerBottom" start-->
             <section class="footerBottom">
-                <p class="text-center">&COPY;2016 ROSUI GHOR |DESIGNED BY <span class="gold">ACETIDESIGNERS</span></p>
+                <p class="text-center">&COPY;2016 ROSUI GHOR | DESIGNED BY <a href="#"><span">ACETIDESIGNERS</span></a></p>
             </section>
+            <!-- SECTION "footerBottom" end-->
         </footer>
+        <!-- FOOTER end-->
 
 
 

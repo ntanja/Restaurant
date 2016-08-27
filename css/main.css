@@ -36,7 +36,7 @@ a:hover{
     background-color: #d4af37; 
     color: #fff;
 }
-/****************NAVIGATION******************/
+/****************HEADER-NAVIGATION******************/
 header{
     position: fixed;
     z-index: 20;
@@ -108,7 +108,9 @@ main{
 .carousel-control:hover, .carousel-control:focus {
     color: #d4af37;
 }
-
+.carousel-caption{
+    padding-top:15%;
+}
 .flower::after{
     height: 20px;
     display: inline-block;
@@ -168,6 +170,7 @@ main{
 }
 .restaurant p{
     margin-bottom: 30px;
+    font-size: 13px;
 }
 .divider::after{
     display: block;
@@ -211,7 +214,6 @@ main{
 .dinner{
     position: relative;
     overflow: hidden;
-
 }
 .dinner figure{
     position: relative;
@@ -277,6 +279,7 @@ img.din-w{
     background: url("style-images/wood1.png")no-repeat center center;
     background-size: cover;
     color: #a9a9a9;
+    font-size: 13px;
 }
 .foodBck{
     background: #fff;
@@ -285,6 +288,16 @@ img.din-w{
 .food li{
     padding: 10px;
     border-bottom: 2px solid #000;
+}
+.food li:last-of-type {
+    border-bottom: none;
+}
+.food li a{
+        text-decoration: none;
+        outline: none;
+    }
+.food li a:active, a:hover {
+    outline: none;
 }
 .food li p{
     color: #a9a9a9;
@@ -392,10 +405,20 @@ figure.chefPic{
 .chef h5{
     color: #fff;
 }
+.chefLauren{
+    position: relative;
+}
+.chefPic{
+    position: relative;
+}
+.chefPic img{
+    position: absolute;
+}
 .chefBlack{
     background-color: #252525;
     box-shadow: 10px 10px 0 #d4af37;
     padding: 20px 10px 10px 2px;
+    margin: 0 auto;
 }
 .backgroundWrap{
     background-image: url("style-images/border-top.png"), url("style-images/border-bottom.png");
@@ -406,73 +429,7 @@ figure.chefPic{
 .backgroundInner{
     border: 1px solid #d4af37;
 }
-/*
-.chefHover {
-   background-image: url("style-images/border-top.png"), url("style-images/border-bottom.png");
-    background-position: right top, -20px -20px;
-    background-repeat: no-repeat;
-    width: 80%;
-    margin: 0 auto;
-    border: 1px solid #d4af37;
-    padding: 30px;
- 
-}
-.chef {
-   
-    background-color: #252525;
-    
-    color: #c1c1c1;
-    text-align: center;
-    position: relative;
-    font-size: 12px;
-    margin: 0 auto;
-    padding-top: 30px;
-    box-shadow: 10px 10px 0 #d4af37;
-       padding-bottom: 20px;
-}
-*/
-/*
-.chef{
-    position: relative;
-    max-width: 920px;
-    margin: 0 auto;
-    height: auto;
-}
-.chef figure{
-    position: relative;
-    max-width: 100%;
-    margin: 0 auto;
-    height: 450px;
-}
-.chef figure img{
-    max-width: 100%;
-    max-height: 100%;
-    margin: 0 auto;
-    height: 450px;
-}
-.chefHover{
-    position: absolute;
-    top: 0;
-    bottom: 0;
-    left: 0;
-    right: 0;
-    max-width: 90%;
-    padding-top: 30px;
-    color: #fff;
-    text-align: left;
-    height: auto;
-    border: 1px solid #d4af37;
-    margin: 15px 20px 30px 15px;
-    padding-left: 10px;
-}
-.chefHover p{
-    padding: 10px 20px 0 0;
-    font-size: 13px;
-}
-.chefHover figure{
-    height: 50px;
-}
-*/
+
 /****************SECTION "reservation" ******************/
 .reservation{
     background: #111;
@@ -480,6 +437,7 @@ figure.chefPic{
 .reservation .row{
     background: #1d1d1d;
     padding: 20px 0;  
+    margin-bottom: 20px;
 }
 .reservation .form-control,
 .reservation .input-group-addon{
@@ -509,7 +467,6 @@ figure.chefPic{
     color: #fff;
     background-color: #d4af37;
 }
-
 .reservation  select{
     -webkit-appearance: none;
     -moz-appearance: none;
@@ -584,6 +541,9 @@ figure.chefPic{
 }
 .footerTop h3{
     color: #fff;
+    text-align: center;
+     font-family: 'Philosopher', sans-serif;
+     font-size: 18px;
 }
 .footerTop p,
 .footerTop ul,
@@ -591,12 +551,13 @@ figure.chefPic{
     font-family: 'Open Sans', sans-serif;
     font-size: 12px;
     color: #7d7d7d;
+    text-align: center;
 }
 .footerTop .row{
     margin: 0;
 }
 .social img{
-    margin: 30px auto;
+    margin: 30px auto; 
 }
 .footerTop .social span{
     font-size: 16px;
@@ -605,7 +566,7 @@ figure.chefPic{
     padding-right: 15px;
     margin-top: 15px;
 }
-.social span.fa-facebook:hover{
+.social span.fa-facebook:hover{ 
     color: #3b5999;
 }
 .social span.fa-twitter:hover{
@@ -628,9 +589,12 @@ figure.chefPic{
 .twitter p.back{
     padding-left: 0;
 }
-.twitter span.fa{
+.twitter span.fa-twitter{
     font-size: 20px;
     padding-right: 20px;
+}
+.twitter span.fa-twitter:hover{
+    color: #1da1f3;
 }
 .contact .line{
     margin: 10px 0;
@@ -680,9 +644,15 @@ figure.chefPic{
 .footerBottom{
     background: #111;
 }
+.footerBottom a{
+    color: #7d7d7d;
+}
+.footerBottom a:hover{
+    color: #d4af37;
+}
 .footerBottom p{
     font-size: 12px;
     color: #7d7d7d;
     padding: 15px 0;
-    margin: 0;
+    margin: 0 auto;
 }
