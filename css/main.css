@@ -1,5 +1,8 @@
 
-/********GENERAL SETTINGS******** background: rgba(250,223,129,0.3)*/ 
+/********GENERAL SETTINGS*********/ 
+body{
+    overflow-x: hidden;
+}
 p,a{
     font-family: 'Philosopher', sans-serif;
 }
@@ -9,6 +12,9 @@ a:hover{
 .vibes{
     font-family: 'Great Vibes', cursive;
     color: #d4af37; 
+}
+.philo{
+    font-family: 'Philosopher', sans-serif;
 }
 .sans{
     font-family: 'Open Sans', sans-serif;
@@ -82,6 +88,10 @@ header{
 main{
     margin-top: 70px;
 }
+/************************************************/
+/*                PAGE 01 HOME                  */
+/************************************************/
+
 /*****************SECTION 1 - CAROUSEL***********/
 .delicious{
     top: 0;
@@ -156,11 +166,9 @@ main{
 /****************SECTION "restaurant" ******************/
 
 .restaurant h2 {
-    font-family: 'Philosopher', sans-serif;
     margin-top: -15px;
 }
 .restaurant h2.gold{
-    font-family: 'Great Vibes', cursive;
     margin-bottom: 0;
 }
 .restaurant .row{
@@ -168,6 +176,14 @@ main{
 }
 .restaurant article{
     padding: 20px;
+}
+.restPics figure{
+    max-width: 260px;
+    max-height: 550px;
+}
+.restaurant figure img{
+    max-height: 100%;
+    max-width: 100%;
 }
 .restaurant a{
     padding: 10px 40px;
@@ -660,3 +676,131 @@ figure.chefPic{
     padding: 15px 0;
     margin: 0 auto;
 }
+
+/************************************************/
+/*                PAGE 02 ABOUT                 */
+/************************************************/
+
+/****************SECTION "mainImg" ******************/
+.mainImg{
+    position: relative;
+}
+.about{
+    position: absolute;
+    top: 10%;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.about h1{
+    text-align: center;
+    font-weight: bold;
+}
+/****************SECTION "restaurant" ******************/
+.serving figure{
+    max-width: 560px;
+    max-height: 560px;
+}
+/****************SECTION "experience" ******************/
+.soto{
+    background: #332e34;
+}
+.soto article{
+    padding: 15px;
+    color: #c2c2c2;
+    font-size: 12px;
+}
+a.letter{
+    font-size: 20px;
+    color: #fff;
+    background: #d4af37;
+    padding: 5px 10px;
+    margin-right: 10px;
+}
+.soto span{
+    padding-right: 5px;
+}
+/****************SECTION "clients" ******************/
+.clients{
+    background:  url("style-images/clients.png")no-repeat center center;
+    background-size: cover;
+    height: 450px;
+    position: relative;
+}
+.word{
+    background: rgba(37,36,34,0.9);
+    position: absolute;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.clients .item p{
+    color: #fff;
+    padding: 20px 40px;
+    font-size: 13px;
+}
+.clients .item figure{
+    width: 45px;
+    height: 45px;
+    overflow: hidden;
+    margin: 0 auto;
+}
+.clients .item figure img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.clients .item p.sans{
+    text-align: center;
+}
+.clients .carousel-indicators{
+    display: none;
+}
+.clientLogos{
+    background: #282528;
+}
+.clientLogos ul{
+    text-align: center;
+    margin-bottom: 0;
+}
+.clientLogos ul li{
+    width: 19%;
+    padding: 0;
+}
+.clients h2,
+.events h2{
+    margin-top: 40px;
+}
+/****************SECTION "events" ******************/
+.band{
+    padding: 0;
+    position: relative;
+}
+.bandHover p{
+    font-family: 'Open Sans', sans-serif;
+}
+.bandHover{
+    position: absolute;
+    bottom: 0;
+    right: 0;
+    left: 0;
+    background: #d4af37;
+    padding: 0 5px 0 30px;
+    color: #fff;
+    font-size: 15px;
+    display: none;
+    
+}
+.bandHover p.sans{
+    font-size: 12px;
+   
+}
+.bandHover img{
+    top: -7px;
+    margin-left: 10px;
+    position: absolute;
+}
+.band:hover .bandHover{
+    display: block;
+}
+

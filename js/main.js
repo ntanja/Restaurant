@@ -63,6 +63,8 @@ $(document).ready(function () {
         lastScrollTop = st;
     }
 
-
+$(function () {
+  $('[data-toggle="tooltip"]').tooltip()
+})
 
 });

@@ -1,6 +1,9 @@
 
 /* Small devices (tablets, 768px and up) */
 @media (min-width: 768px) { 
+    /************************************************/
+    /*                PAGE 01 HOME                 */
+    /************************************************/
     main{
         margin-top: 0;
     }
@@ -10,14 +13,6 @@
     }
     .navbar-brand {
         padding-left: 80px;
-    }
-    .navbar-brand img {
-        -webkit-transition: -webkit-transform .8s ease-in-out;
-        transition: transform .8s ease-in-out;
-    }
-    .navbar-brand img:hover {
-        -webkit-transform: rotate(360deg);
-        transform: rotate(360deg);
     }
     .nav-up {
         background: rgba(0,0,0,0.5);
@@ -90,10 +85,52 @@
         margin: 0 auto;
         left: 0;
     }
+
+    /************************************************/
+    /*                PAGE 02 ABOUT                 */
+    /************************************************/
+
+    /*****************SECTION "mainImg"***********/
+    .mainImg figure{
+        max-height: 380px;
+    }
+    .about h1 {
+        font-size: 40px;
+        padding-top: 40px;
+    }
+    /*****************SECTION "clients"***********/
+    .clients h2, .events h2 {
+        margin-top: 60px;
+    }
+    .clients .item p{
+        padding: 50px 100px 20px;
+        font-size: 15px;
+    }
+    .clients .item{
+        text-align: center;
+    }
+    .clients .item figure{
+        display: inline-block;
+    }
+    .clients .item figure img {
+        max-height: 100%;
+        max-width: 100%;
+    }
+    .clients .item p.sans {
+        text-align: center;
+        display: inline-block;
+        padding: 0;
+        margin-top: -20px;
+        line-height: 60px;
+    }
 }     
 
 /* Medium devices (desktops, 992px and up) */
 @media (min-width: 992px) {  
+    /************************************************/
+    /*                PAGE 01 HOME                 */
+    /************************************************/
+
     /********GENERAL SETTINGS********/
     .restaurant,
     .services,
@@ -120,7 +157,7 @@
     .navbar-nav {
         padding-top: 30px;
     }
-    /*****************SECTION 1 - CAROUSEL***********/
+    /*****************SECTION 1- CAROUSEL***********/
     .delicious p {
         font-size: 20px;
     }
@@ -217,10 +254,57 @@
         width: 60px;
         height: 60px;
     }
+    /************************************************/
+    /*                PAGE 02 ABOUT                 */
+    /************************************************/
+    /*****************SECTION "mainImg"***********/
+    .about h1 {
+        font-size: 70px;
+        padding-top: 50px;
+    }
+    /*****************SECTION "experience"***********/
+    .experience h2{
+        margin-top: 15px;
+    }
+    .experience figure{
+        height: 378px;
+    }
+    .experience img{
+        height: 100%;
+    }
+    .soto{
+        padding-right: 0;
+        border: 2px solid #332e34;
+    }
+    .knife{
+        padding-left: 0;
+        padding-right: 0;
+    }
+    /*****************SECTION "clients"***********/
+    .clients .item p{
+        padding: 50px 130px 20px;
+        font-size: 15px;
+    }
+    /*****************SECTION "events"***********/
+    .bandHover{
+        position: absolute;
+        bottom: 0;
+        right: 0;
+        left: 0;
+        background: #d4af37;
+        padding: 0 5px 0 25px;
+        color: #fff;
+        font-size: 15px;
+        display: none;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
 @media (min-width: 1200px) { 
+    /************************************************/
+    /*                PAGE 01 HOME                 */
+    /************************************************/
+
     /********GENERAL SETTINGS********/
     .restaurant,
     .wood,
@@ -242,7 +326,7 @@
         font-size: 48px;
     }
     /****************HEADER-NAVIGATION******************/
-    
+
     .navImg-up{ 
         width: 170px;
     }
@@ -259,11 +343,15 @@
     .delicious h1 {
         font-size: 100px;
     }
-    .delicious p {
+    .delicious p { 
         font-size: 24px;
     }
+    /****************SECTION "restaurant" ******************/
     .restaurant h2{
         font-size: 60px;
+    }
+    .restaurant h2.gold {
+        margin-bottom: -25px;
     }
     /****************SECTION "wood" ******************/
     .wood .carousel-control .glyphicon-chevron-left, .wood .carousel-control .icon-prev {
@@ -333,6 +421,56 @@
         padding: 25px 0;
     }
 
+    /************************************************/
+    /*                PAGE 02 ABOUT                 */
+    /************************************************/
+    /*****************SECTION "mainImg"***********/
+    .about h1 {
+        font-size: 100px;
+        padding-top: 70px;
+    }
+    /****************SECTION "experience" ******************/   
+    .soto{
+        padding-top: 0;
+        border: none;
+    }
+    .soto article{
+        font-size: 13px;
+    }
+    .soto h2{
+        margin-top: 90.5px;
+        font-size: 48px;
+    }
+    .sotoChef{
+        margin-top: 50px;
+    }
+    .soto ul{
+        margin-top: 50px;
+        margin-bottom: 60px;
+    }
+    .knife figure{
+        height: 600px;
+    }
+    .knife img{
+        height: 100%;
+    }
+     /*****************SECTION "clients"***********/
+    .clients h2 {
+        margin-top: 75px;
+        font-size: 48px;
+    }
+    .clients .item p {
+    padding: 30px 220px 20px;
+}
+/*****************SECTION "events"***********/
+    .events h2 {
+        margin-top: 90px;
+        margin-bottom: 80px;
+        font-size: 48px;
+    }
+    .bandHover {
+    font-size: 12px;
+}
 }
 
 
