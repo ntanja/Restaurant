@@ -54,7 +54,6 @@ $(document).ready(function () {
         } else {
             // Scroll Up
             if (st + $(window).height() < $(document).height()) {
-                $('header').removeClass('nav-up').addClass('nav-down');
                 $('.navbar-brand > img').removeClass('navImg-down').addClass('navImg-up');
                 
             }

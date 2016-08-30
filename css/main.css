@@ -97,7 +97,7 @@ main{
     top: 0;
 }
 .delicious h1{
-    font-size: 26px;
+    font-size: 30px;
     font-weight: bold;
 }
 .delicious img{
@@ -122,7 +122,7 @@ main{
 .carousel-control:hover, .carousel-control:focus {
     color: #d4af37;
 }
-.carousel-caption{
+.delicious .carousel-caption{
     padding-top:15%;
 }
 .flower::after{
@@ -802,5 +802,74 @@ a.letter{
 }
 .band:hover .bandHover{
     display: block;
+}
+
+/************************************************/
+/*                PAGE 03 MENU                  */
+/************************************************/
+.breakfast,
+.lunch,
+.dinner-menu{
+    background: #f2f2f2;
+}
+.white{
+    background: #fff;
+}
+.menu-break,
+.menu-lunch,
+.menu-dinner,
+.menu-drink{
+    padding: 10px;
+    border: 1px solid #d4af37;
+}
+.menu-break img,
+.menu-lunch img,
+.menu-dinner img,
+.drinks img{
+    margin: 0 auto;
+}
+.breakfast{
+    margin-bottom: 20px;
+}
+.breakfast .pasta{
+    margin-top: 30px;
+}
+.pasta{
+    position: relative;
+    max-height: 675px;
+    max-width: 400px;
+    margin: 0 auto;
+}
+.pasta figure{
+    position: relative;
+    max-height: 675px;
+    max-width: 400px;
+}
+.pasta figure img{
+    max-height: 100%;
+    max-width: 100%;
+}
+.breakHover{
+    background: rgba(255,255,255,0.8);
+    position: absolute;
+    top: 10px;
+    left: 10px;
+    bottom: 10px;
+    right: 10px;
+    display: none;
+    padding-top: 55%;
+    
+}
+.pasta:hover .breakHover{
+    display: block;
+}
+.menu-break img{
+    padding-top: 30px;
+}
+.dinner-menu{
+    margin: 20px 0;
+}
+.drinks{
+    margin-bottom: 40px;
 }
 

@@ -111,6 +111,7 @@
     }
     .clients .item figure{
         display: inline-block;
+        vertical-align: top;
     }
     .clients .item figure img {
         max-height: 100%;
@@ -120,8 +121,7 @@
         text-align: center;
         display: inline-block;
         padding: 0;
-        margin-top: -20px;
-        line-height: 60px;
+        line-height: 40px;
     }
 }     
 
@@ -274,7 +274,7 @@
     }
     .soto{
         padding-right: 0;
-        border: 2px solid #332e34;
+        height: 378px;
     }
     .knife{
         padding-left: 0;
@@ -336,6 +336,11 @@
     .navbar-nav {
         padding-left: 50px;
     }
+    /*****************SECTION "mainImg"***********/
+    .mainImg{
+        margin-bottom: 120px;
+    }
+    
     /*****************SECTION 1 - CAROUSEL***********/
     .carousel-caption {
         padding-top: 10%;
@@ -432,7 +437,7 @@
     /****************SECTION "experience" ******************/   
     .soto{
         padding-top: 0;
-        border: none;
+        height: 600px;
     }
     .soto article{
         font-size: 13px;
