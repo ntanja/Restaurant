@@ -297,6 +297,23 @@
         font-size: 15px;
         display: none;
     }
+    /************************************************/
+    /*                PAGE 03 MENU                  */
+    /************************************************/
+    /*****************SECTION "breakfast-menu"***********/
+    .breakfast-menu{
+        margin-top: 60px;
+    }
+    .menu-break img {
+        padding-top: 0;
+    }
+    .breakfast-menu .pasta {
+        margin-top: 0;
+    }
+    /*****************SECTION "drinks"***********/
+    .drinks{
+        margin-bottom: 60px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -340,7 +357,7 @@
     .mainImg{
         margin-bottom: 120px;
     }
-    
+
     /*****************SECTION 1 - CAROUSEL***********/
     .carousel-caption {
         padding-top: 10%;
@@ -459,23 +476,80 @@
     .knife img{
         height: 100%;
     }
-     /*****************SECTION "clients"***********/
+    /*****************SECTION "clients"***********/
     .clients h2 {
         margin-top: 75px;
         font-size: 48px;
     }
     .clients .item p {
-    padding: 30px 220px 20px;
-}
-/*****************SECTION "events"***********/
+        padding: 30px 220px 20px;
+    }
+    /*****************SECTION "events"***********/
     .events h2 {
         margin-top: 90px;
         margin-bottom: 80px;
         font-size: 48px;
     }
     .bandHover {
-    font-size: 12px;
+        font-size: 12px;
+    }
+    /************************************************/
+    /*                PAGE 03 MENU                  */
+    /************************************************/
+    /*****************SECTION "breakfast-menu"***********/
+    .breakfast-menu {
+        padding-top: 115px;
+        position: relative;
+        background: url("style-images/desserts.png")no-repeat right top;
+        background-size: 150px 100px;
+        z-index: 10;
+    }
+    .breakfast-menu .row,
+    .lunch .row,
+    .dinner-menu .row,
+    .drinks .row{
+        margin: 0;
+    }
+    .breakfast-menu .col-md-4,
+    .dinner-menu .col-md-4{
+        padding-right: 0;
+    }
+    .lunch .col-md-4,
+    .drinks .col-md-4{
+        padding-left: 0;
+    }
+    .food-menu .marmo {
+        margin-bottom: 52px;
+    }
+    .food-menu .row {
+    padding: 15px;
 }
+/*****************SECTION "lunch"***********/
+.lunch{
+    padding-top: 115px;
+    position: relative;
+        background: url("style-images/spaghetti.png")no-repeat 20px 10px;
+        background-size: 130px 90px;
+        z-index: 30;
+}
+    
+    /*****************SECTION "dinner-menu"***********/
+    .dinner-menu{
+        padding-top: 115px;
+        position: relative;
+        background: url("style-images/pizza.png")no-repeat right top;
+        background-size: 150px 100px;
+        z-index: 10;
+    }
+    /*****************SECTION "drinks"***********/
+    .drinks{
+        padding-top: 115px;
+        margin-bottom: 115px;
+        position: relative;
+        background: url("style-images/vine.png")no-repeat 10px top;
+        background-size: 150px 100px;
+        z-index: 30;
+    }
 }
 
 

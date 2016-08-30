@@ -313,9 +313,9 @@ img.din-w{
     border-bottom: none;
 }
 .food li a{
-        text-decoration: none;
-        outline: none;
-    }
+    text-decoration: none;
+    outline: none;
+}
 .food li a:active, a:hover {
     outline: none;
 }
@@ -562,8 +562,8 @@ figure.chefPic{
 .footerTop h3{
     color: #fff;
     text-align: center;
-     font-family: 'Philosopher', sans-serif;
-     font-size: 18px;
+    font-family: 'Philosopher', sans-serif;
+    font-size: 18px;
 }
 .footerTop p,
 .footerTop ul,
@@ -789,11 +789,11 @@ a.letter{
     color: #fff;
     font-size: 15px;
     display: none;
-    
+
 }
 .bandHover p.sans{
     font-size: 12px;
-   
+
 }
 .bandHover img{
     top: -7px;
@@ -807,31 +807,44 @@ a.letter{
 /************************************************/
 /*                PAGE 03 MENU                  */
 /************************************************/
-.breakfast,
-.lunch,
-.dinner-menu{
+.menu-background{
     background: #f2f2f2;
 }
 .white{
     background: #fff;
 }
-.menu-break,
-.menu-lunch,
-.menu-dinner,
-.menu-drink{
+.food-menu{
+    padding: 10px;
+}
+.food-menu .row{
     padding: 10px;
     border: 1px solid #d4af37;
 }
-.menu-break img,
-.menu-lunch img,
-.menu-dinner img,
-.drinks img{
+.food-menu figure{
+    width: 90px;
+    height: 90px;
+}
+.food-menu img{
     margin: 0 auto;
 }
-.breakfast{
+.food-menu .marmo{
+    margin-bottom: 5px;
+}
+.food-menu figure img{
+    max-width: 100%;
+    max-height: 100%;
+    border-radius: 50%;
+    overflow: hidden;
+    transition-duration: 2s;
+    transition-property: all;
+}
+.food-menu figure img:hover{
+    transform: scale(1.3) ;
+}
+.breakfast-menu{
     margin-bottom: 20px;
 }
-.breakfast .pasta{
+.breakfast-menu .pasta{
     margin-top: 30px;
 }
 .pasta{
@@ -858,7 +871,7 @@ a.letter{
     right: 10px;
     display: none;
     padding-top: 55%;
-    
+
 }
 .pasta:hover .breakHover{
     display: block;
