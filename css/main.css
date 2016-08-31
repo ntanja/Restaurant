@@ -923,7 +923,8 @@ a.letter{
     padding: 10px;
     padding-left: 30px;
 }
-.nutrition p.philo{
+.nutrition p.philo,
+.categories p.philo{
     background: #d4af37;
     color: #fff;
     font-size: 16px;
@@ -1096,4 +1097,41 @@ a.letter{
 .blog-page .btn:hover span.fa-search{
     color: #d2ad3a;
 }
+/****blog-categories****/
+.categories .zmdi-label-alt-outline{
+    padding-right: 10px;
+}
+.categories p a{
+    font-family: 'Open Sans', sans-serif;
+    color: #797979;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    padding-left: 15px;
+}
+.categories p a:hover{
+    color: #d4af37;
+}
+.categories ul{
+    padding-left: 20px;
+}
+.categories ul li{
+    border: 1px solid #e4e4e4;
+    margin-right: 10px;
+    padding: 5px;
+}
+.categories ul li a{
+    color: #797979;
+}
+.categories li:hover{
+    background: #d4af37;
+}
+.categories li:hover a{
+    color: #fff;
+}
+.categories p span.numb{
+    color: #797979;
+    padding-right: 15px;
+}
+
 
