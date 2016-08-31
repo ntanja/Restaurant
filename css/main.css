@@ -31,6 +31,15 @@ a:hover{
     color: #fff;
     background-color: #d4af37;
 }
+.gold-reverse{
+    color: #fff;
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+}
+.gold-reverse:hover{
+    color: #d4af37;
+    background-color: #fff; 
+}
 .goldRound{
     color: #d4af37;
     background-color: transparent;
@@ -884,5 +893,207 @@ a.letter{
 }
 .drinks{
     margin-bottom: 40px;
+}
+/************************************************/
+/*            PAGE 04 SINGLE MENU               */
+/************************************************/
+
+/*****************SECTION - "steak"***********/
+.steak .dhaka{
+    margin-top: -20px;
+    margin-bottom: 30px;
+}
+.steak .dhaka p{
+    background: #d4af37;
+    color: #fff;
+    padding: 5px;
+    display: inline-block;
+    font-size: 15px;
+}
+.steak .dhaka p span{
+    border: 1px solid #fff;
+    padding: 5px;
+    display: inline-block;
+}
+.steak .nutrition p{
+    font-family: 'Open Sans', sans-serif;
+    color: #d4af37;
+    font-size: 14px;
+    border-bottom: 1px solid #eaeaea;
+    padding: 10px;
+    padding-left: 30px;
+}
+.nutrition p.philo{
+    background: #d4af37;
+    color: #fff;
+    font-size: 16px;
+    text-align: center;
+    border: none;
+    padding: 10px;
+}
+.nutrition article{
+    padding: 15px;
+    margin-bottom: 40px;
+}
+.nutrition .fa-stop{
+    font-size: 8px;
+    vertical-align: top;
+    padding-top: 6px;
+}
+/************************************************/
+/*               PAGE 05 BLOG                   */
+/************************************************/
+/*****************SECTION - "blog-page"***********/
+.pizza{
+    position: relative;
+}
+.pizza p.nov{
+    position: absolute;
+    display: inline-block;
+    background: #d4af37;
+    padding: 5px 10px;
+    top: 10px;
+    left: 5px;
+}
+.pizza a{
+    color: #fff;
+}
+.blog-pizza{
+    margin-top: 40px;
+}
+.blog-pizza h4{
+    margin-top: 35px;
+    margin-bottom: 25px;
+    font-weight: 600;
+}
+.blog-pizza ul{
+    border-bottom: 1px solid #e4e4e4;
+    border-top: 1px solid #e4e4e4;
+    padding: 15px 0;
+}
+.blog-pizza ul li{
+    font-size: 12px;
+    padding-right: 30px;
+    display: block;
+    text-align: center;
+}
+.blog-pizza ul li a{
+    color: #999999;
+}
+.blog-pizza ul li a:hover span{
+    color: #d4af37;
+}
+.blog-pizza ul li span{
+    padding-right: 10px;
+}
+.blog-pizza p{
+    color: #6f6f6f;
+    font-size: 13px;
+    margin-bottom: 30px;
+}
+.blog-pizza a.gold-reverse{
+    padding: 10px;
+}
+/****blog-pizza carousel****/
+.blog-pizza .carousel-control.right,
+.blog-pizza .carousel-control.left{
+    background-image: none;
+}
+.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-left {
+    left: 50%;
+    margin-left: -20px;
+}
+.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-right {
+    right: 50%;
+    margin-right: -20px;
+}
+.blog-pizza .carousel-control{
+    opacity: 0.9;
+}
+.blog-pizza .carousel-control .fa-angle-right:hover,
+.blog-pizza .carousel-control .fa-angle-left:hover{
+    background: #d4af37;
+    color:#fff;
+}
+.blog-pizza .carousel-control .icon-prev, 
+.blog-pizza .carousel-control .icon-next, 
+.blog-pizza .carousel-control .fa-angle-left,
+.blog-pizza .carousel-control .fa-angle-right {
+    position: absolute;
+    top: 45%;
+    z-index: 5;
+    display: inline-block;
+    background: #333;
+    padding: 5px 7px;
+    font-size: 10px;
+}
+/****blog-pizza carousel end****/
+.blog-video iframe{
+    width: 100%;
+    height: auto;
+    padding: 5px;
+    border: 1px solid #e4e4e4;
+}
+/****pagination****/
+.blog-nav{
+    margin-top: 50px;
+    margin-bottom: 30px;
+}
+.blog-nav .pagination-sm > li > a,.blog-nav .pagination-sm > li > span {
+    margin-right: 10px;
+}
+.blog-nav .pagination > .active > a,.blog-nav .pagination > .active > span,
+.blog-nav .pagination > .active > a:hover, .blog-nav .pagination > .active > span:hover,
+.blog-nav .pagination > .active > a:focus,.blog-nav .pagination > .active > span:focus {
+    z-index: 2;
+    color: #fff;
+    cursor: default;
+    background-color: #d2ad3a;
+    border-color: #d2ad3a;
+}
+.blog-nav .pagination > li > a:hover, .blog-nav .pagination > li > span:hover,
+.blog-nav .pagination > li > a:focus, .blog-nav .pagination > li > span:focus {
+    color: #d4af37;
+    background-color: #fff;
+    border-color: #d2ad3a;
+}
+
+.blog-nav .pagination > li > a, .blog-nav .pagination > li > span {
+    color: #dadada;
+    border: 1px solid #dadada;
+    border-radius: 0;
+    font-weight: bold;
+}
+.blog-nav a:focus {
+    outline: none;
+}
+/****pagination end****/
+
+.blog-page .form-control{
+    border: 1px solid #e4e4e4;
+    border-right: none;
+    border-radius: 0;
+    box-shadow: none;
+}
+.blog-page span.fa-search{
+    border-left: 1px solid #e4e4e4;
+    padding: 2px;
+    padding-left: 15px;
+    color: #c2c2c2;
+}
+.blog-page .btn{
+    padding: 6px 12px;
+    border: 1px solid #e4e4e4;
+    border-left: none;
+    border-radius: 0;
+}
+.blog-page .btn:focus,
+.blog-page .btn:hover{
+    outline: none;
+    background: none;
+}
+.blog-page .btn:focus span.fa-search,
+.blog-page .btn:hover span.fa-search{
+    color: #d2ad3a;
 }
 

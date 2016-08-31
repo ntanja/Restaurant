@@ -123,6 +123,27 @@
         padding: 0;
         line-height: 40px;
     }
+    /************************************************/
+    /*            PAGE 04 SINGLE MENU               */
+    /************************************************/
+
+    /*****************SECTION - "steak"***********/
+    .steak .dhaka{
+        margin-top: -25px;
+    }
+    .steak .dhaka p{
+        padding: 5px;
+        font-size: 18px;
+    }
+    .steak .about-dhaka{
+        padding: 30px;
+    }
+    .nutrition article{
+        text-align: center;
+    }
+    /************************************************/
+    /*               PAGE 05 BLOG                   */
+    /************************************************/
 }     
 
 /* Medium devices (desktops, 992px and up) */
@@ -314,6 +335,31 @@
     .drinks{
         margin-bottom: 60px;
     }
+    /************************************************/
+    /*            PAGE 04 SINGLE MENU               */
+    /************************************************/
+
+    /*****************SECTION - "steak"***********/
+    .steak .dhaka{
+        margin-top: -30px;
+        margin-bottom: 50px;
+    }
+    .steak .dhaka p{
+        padding: 5px;
+        font-size: 24px;
+    }
+    .steak .dhaka p span{
+        padding: 10px;
+    }
+    .steak .about-dhaka{
+        font-size: 13px;
+    }
+    .nutrition article{
+        text-align: left;
+    }
+    /************************************************/
+    /*               PAGE 05 BLOG                   */
+    /************************************************/
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -502,7 +548,6 @@
         position: relative;
         background: url("style-images/desserts.png")no-repeat right top;
         background-size: 150px 100px;
-        z-index: 10;
     }
     .breakfast-menu .row,
     .lunch .row,
@@ -522,24 +567,22 @@
         margin-bottom: 52px;
     }
     .food-menu .row {
-    padding: 15px;
-}
-/*****************SECTION "lunch"***********/
-.lunch{
-    padding-top: 115px;
-    position: relative;
+        padding: 15px;
+    }
+    /*****************SECTION "lunch"***********/
+    .lunch{
+        padding-top: 115px;
+        position: relative;
         background: url("style-images/spaghetti.png")no-repeat 20px 10px;
         background-size: 130px 90px;
-        z-index: 30;
-}
-    
+    }
+
     /*****************SECTION "dinner-menu"***********/
     .dinner-menu{
         padding-top: 115px;
         position: relative;
         background: url("style-images/pizza.png")no-repeat right top;
         background-size: 150px 100px;
-        z-index: 10;
     }
     /*****************SECTION "drinks"***********/
     .drinks{
@@ -548,8 +591,21 @@
         position: relative;
         background: url("style-images/vine.png")no-repeat 10px top;
         background-size: 150px 100px;
-        z-index: 30;
     }
+    /************************************************/
+    /*            PAGE 04 SINGLE MENU               */
+    /************************************************/
+    .mainImg-blog{
+        margin-bottom: 0;
+    }
+    /*****************SECTION - "steak"***********/
+    .nutrition article{
+        padding: 30px;
+        margin-bottom: 80px;
+    }
+    /************************************************/
+    /*               PAGE 05 BLOG                   */
+    /************************************************/
 }
 
 
