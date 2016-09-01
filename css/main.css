@@ -693,6 +693,9 @@ figure.chefPic{
 /****************SECTION "mainImg" ******************/
 .mainImg{
     position: relative;
+    height: 380px;
+    background: url("style-images/main.jpg")no-repeat center center;
+    background-size: cover;
 }
 .about{
     position: absolute;
@@ -948,6 +951,18 @@ a.letter{
 .pizza{
     position: relative;
 }
+
+.pizza figure{
+    overflow: hidden;
+
+}
+.pizza figure img{
+    transition: 1s;
+}
+.pizza figure:hover img{
+ transform: scale(1.2);
+}
+
 .pizza p.nov{
     position: absolute;
     display: inline-block;
@@ -966,6 +981,12 @@ a.letter{
     margin-top: 35px;
     margin-bottom: 25px;
     font-weight: 600;
+}
+.blog-pizza h4 a{
+    color: #312f32;
+}
+.blog-pizza h4 a:hover{
+    color: #d4af37;
 }
 .blog-pizza ul{
     border-bottom: 1px solid #e4e4e4;
@@ -995,31 +1016,42 @@ a.letter{
 .blog-pizza a.gold-reverse{
     padding: 10px;
 }
-/****blog-pizza carousel****/
+/****blog-pizza/categories carousel****/
 .blog-pizza .carousel-control.right,
-.blog-pizza .carousel-control.left{
+.blog-pizza .carousel-control.left,
+.categories .carousel-control.right,
+.categories .carousel-control.left{
     background-image: none;
 }
-.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-left {
+.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-left,
+.categories .carousel-control .icon-prev,.categories .carousel-control .fa-angle-left {
     left: 50%;
     margin-left: -20px;
 }
-.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-right {
+.blog-pizza .carousel-control .icon-prev,.blog-pizza .carousel-control .fa-angle-right,
+.categories .carousel-control .icon-prev,.categories .carousel-control .fa-angle-right{
     right: 50%;
     margin-right: -20px;
 }
-.blog-pizza .carousel-control{
+.blog-pizza .carousel-control,
+.categories .carousel-control{
     opacity: 0.9;
 }
 .blog-pizza .carousel-control .fa-angle-right:hover,
-.blog-pizza .carousel-control .fa-angle-left:hover{
+.blog-pizza .carousel-control .fa-angle-left:hover,
+.categories .carousel-control .fa-angle-right:hover,
+.categories .carousel-control .fa-angle-left:hover{
     background: #d4af37;
     color:#fff;
 }
 .blog-pizza .carousel-control .icon-prev, 
 .blog-pizza .carousel-control .icon-next, 
 .blog-pizza .carousel-control .fa-angle-left,
-.blog-pizza .carousel-control .fa-angle-right {
+.blog-pizza .carousel-control .fa-angle-right,
+.categories .carousel-control .icon-prev, 
+.categories .carousel-control .icon-next, 
+.categories .carousel-control .fa-angle-left,
+.categories .carousel-control .fa-angle-right{
     position: absolute;
     top: 45%;
     z-index: 5;
@@ -1031,7 +1063,7 @@ a.letter{
 /****blog-pizza carousel end****/
 .blog-video iframe{
     width: 100%;
-    height: auto;
+    height: 100%;
     padding: 5px;
     border: 1px solid #e4e4e4;
 }
@@ -1098,15 +1130,29 @@ a.letter{
     color: #d2ad3a;
 }
 /****blog-categories****/
+.blog-categories{
+    margin-top: 40px;
+    margin-bottom: 30px;
+}
+.categories{
+    margin-top: 30px;
+    border: 1px solid #eaeaea;
+}
 .categories .zmdi-label-alt-outline{
     padding-right: 10px;
+}
+.categories p{
+    border-bottom: 1px solid #eaeaea;
+     padding: 10px 0;
+}
+.categories p:last-of-type{
+    border-bottom: none;
 }
 .categories p a{
     font-family: 'Open Sans', sans-serif;
     color: #797979;
     font-size: 14px;
-    border-bottom: 1px solid #eaeaea;
-    padding: 10px;
+    padding: 0 10px;
     padding-left: 15px;
 }
 .categories p a:hover{
@@ -1119,6 +1165,7 @@ a.letter{
     border: 1px solid #e4e4e4;
     margin-right: 10px;
     padding: 5px;
+    margin-bottom: 10px;
 }
 .categories ul li a{
     color: #797979;
@@ -1132,6 +1179,15 @@ a.letter{
 .categories p span.numb{
     color: #797979;
     padding-right: 15px;
+}
+/************************************************/
+/*               PAGE 06 BLOG-DETAILS           */
+/************************************************/
+/*****************SECTION - "blog-details"***********/
+.blog-details .blog-pizza p.left-line{
+    border-left: 2px solid #d4af37;
+    padding: 10px;
+    background: #f4f4f4;
 }
 
 
