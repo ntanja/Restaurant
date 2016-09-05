@@ -91,7 +91,9 @@
     /************************************************/
 
     /*****************SECTION "mainImg"***********/
-
+    .mainImg{
+        height: 250px;
+    }
     .about h1 {
         font-size: 40px;
         padding-top: 40px;
@@ -147,8 +149,20 @@
         display: inline-block;
     }     
     /************************************************/
-    /*               PAGE 06                   */
+    /*              PAGE 07 RESERVATION             */
     /************************************************/
+    /*********SECTION - "reservation-page"***********/
+    .reservation-page button{
+        width: 180px;
+    }
+    .call-hover p.call-left{
+        text-align: right;
+        padding-right: 15px;
+    }
+    .call-hover p.call-right{
+        text-align: left;
+        padding-left: 15px;
+    }
 
 }
 /* Medium devices (desktops, 992px and up) */
@@ -183,6 +197,7 @@
     .navbar-nav {
         padding-top: 30px;
     }
+
     /*****************SECTION 1- CAROUSEL***********/
     .delicious p {
         font-size: 20px;
@@ -284,6 +299,9 @@
     /*                PAGE 02 ABOUT                 */
     /************************************************/
     /*****************SECTION "mainImg"***********/
+    .mainImg{
+        height: 330px;
+    }
     .about h1 {
         font-size: 70px;
         padding-top: 50px;
@@ -336,6 +354,9 @@
     .breakfast-menu .pasta {
         margin-top: 0;
     }
+    .pasta{
+        display: block;
+    }
     /*****************SECTION "drinks"***********/
     .drinks{
         margin-bottom: 60px;
@@ -365,7 +386,41 @@
     /************************************************/
     /*               PAGE 06 BLOG                   */
     /************************************************/
-
+    /*****************SECTION - "blog-details"***********/
+    .blog-posts figure {
+        margin: 0;
+    }
+    .blog-posts figure img{
+        width: 80%;
+    }
+    .carousel-hover {
+        left: 0;
+        width: 92%;
+        height: 80%;
+    }
+    .owl-theme .owl-controls .owl-buttons div.owl-next,
+    .owl-theme .owl-controls .owl-buttons div.owl-prev{
+        margin-top: -20px;
+    }
+    /************************************************/
+    /*              PAGE 07 RESERVATION             */
+    /************************************************/
+    /*********SECTION - "reservation-page"***********/
+    .reservation-page button{
+        width: 180px;
+    }
+    .call-hover p.call-right{
+        text-align: left;
+        padding-left: 25px;
+    }
+    /************************************************/
+    /*              PAGE 09 RESERVATION             */
+    /************************************************/
+    /*********SECTION - "gmap"***********/
+    .gmap iframe{
+        width: 100%;
+        height: 400px;
+    }
 }
 
 /* Large devices (large desktops, 1200px and up) */
@@ -382,17 +437,21 @@
     .ourChef,
     .reservation,
     .blog{
-        padding: 120px 0;
+        padding: 0;
         margin-bottom: 0;
+        margin-top: 80px;
     }
     .services h2,
     .food h2,
     .ourChef h2,
     .reservation h2,
     .blog h2{
-        margin-top: 0;
+        margin-top: 0px;
         margin-bottom: 75px;
         font-size: 48px;
+    }
+    .food h2, .reservation h2{
+        margin-top: 70px;
     }
     /****************HEADER-NAVIGATION******************/
 
@@ -404,10 +463,6 @@
     }
     .navbar-nav {
         padding-left: 50px;
-    }
-    /*****************SECTION "mainImg"***********/
-    .mainImg{
-        margin-bottom: 80px;
     }
 
     /*****************SECTION 1 - CAROUSEL***********/
@@ -421,6 +476,7 @@
         font-size: 24px;
     }
     /****************SECTION "restaurant" ******************/
+
     .restaurant h2{
         font-size: 60px;
     }
@@ -476,6 +532,9 @@
     .reservation form{
         padding: 0 70px;
     }
+    .reservation .row{
+        margin-bottom: 100px;
+    }
     /****************SECTION "footerTop" ******************/
     .footerTop {
         padding-top: 80px;
@@ -499,11 +558,17 @@
     /*                PAGE 02 ABOUT                 */
     /************************************************/
     /*****************SECTION "mainImg"***********/
+    .mainImg{
+        height: 380px;
+    }
     .about h1 {
         font-size: 100px;
         padding-top: 70px;
     }
     /****************SECTION "experience" ******************/   
+    .experience{
+        margin-top: 60px;
+    }
     .soto{
         padding-top: 0;
         height: 600px;
@@ -529,6 +594,9 @@
         height: 100%;
     }
     /*****************SECTION "clients"***********/
+    .clients{
+        margin-top: 70px;
+    }
     .clients h2 {
         margin-top: 75px;
         font-size: 48px;
@@ -550,7 +618,6 @@
     /************************************************/
     /*****************SECTION "breakfast-menu"***********/
     .breakfast-menu {
-        padding-top: 115px;
         position: relative;
         background: url("style-images/desserts.png")no-repeat right top;
         background-size: 150px 100px;
@@ -612,6 +679,9 @@
     /************************************************/
     /*               PAGE 05 BLOG                   */
     /************************************************/
+    .blog-page{
+        margin-top: 80px;
+    }
     .blog-pizza,
     .blog-categories{
         margin-top: 0;
@@ -619,6 +689,99 @@
     .blog-pizza{
         margin-bottom: 80px;
     }
+    .blog-pizza ul{
+        margin-bottom: 30px;
+    }
+    /************************************************/
+    /*               PAGE 06 BLOG                   */
+    /************************************************/
+    /***************SECTION - "blog-details"***********/
+    .carousel-hover {
+        width: 270px;
+        height: 185px;
+    }
+    .blog-posts figure img {
+        width: 100%;
+    }
+    .owl-theme .owl-controls .owl-buttons div.owl-next,
+    .owl-theme .owl-controls .owl-buttons div.owl-prev{
+        margin-top: 0;
+    }
+    .owl-theme .owl-controls .owl-buttons div.owl-next{
+        right: 15px;
+    }
+    .blog-pizza1{
+        margin-bottom: 60px;
+    }
+    .blog-margin{
+        margin-bottom: 40px;
+    }
+    .blog-author{
+        margin-bottom: 60px;
+    }
+    .pappu{
+        margin-top: 20px;
+    }
+    .author .gray-link{
+        padding: 5px 25px;
+    }
+    .text-comment button{
+        width: 200px;
+        margin-bottom: 80px;
+    }
+    .blog-paging{
+        margin-bottom: 80px;
+    }
+    /************************************************/
+    /*              PAGE 07 RESERVATION             */
+    /************************************************/
+    /*********SECTION - "reservation-page"***********/
+    .reservation-page{
+        margin-top: 80px;
+    }
+    .reservation-page h4{
+        font-size: 24px;
+    }
+    .call{
+        height: 300px;
+    }
+    .call-hover h1{
+        font-size: 60px;
+        margin-top: 65px;
+    }
+    .call-hover p{
+        font-size: 24px;
+    }
+    .call-hover p.call-left{
+        text-align: right;
+        padding-right: 15px;
+    }
+    .call-hover p.call-right{
+        text-align: left;
+        padding-left: 30px;
+    }
+    /************************************************/
+    /*              PAGE 09 RESERVATION             */
+    /************************************************/
+    /*********SECTION - "gmap"***********/
+    .contact-info{
+        margin: 80px 0;
+    }
+    .contact-info h4{
+        margin-top: 0;
+    }
+    .contact-info .input-group,
+    .contact-info textarea{
+        margin-bottom: 30px;
+    }
+    .contact-info button{
+        margin-bottom: 0;
+    }
+    /*********SECTION - "gmap"***********/
+    .gmap iframe{
+        width: 100%;
+        height: 500px;
+    } 
 }
 
 

@@ -413,6 +413,4 @@
 .input-prepend.date .add-on i,
 .input-group.date .input-group-addon span {
 	cursor: pointer;
-	width: 14px;
-	height: 14px;
 }

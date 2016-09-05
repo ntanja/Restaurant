@@ -55,15 +55,61 @@ $(document).ready(function () {
             // Scroll Up
             if (st + $(window).height() < $(document).height()) {
                 $('.navbar-brand > img').removeClass('navImg-down').addClass('navImg-up');
-                
+
             }
         }
 
         lastScrollTop = st;
     }
 
-$(function () {
-  $('[data-toggle="tooltip"]').tooltip()
-})
+    $(function () {
+        $('[data-toggle="tooltip"]').tooltip()
+    });
+
+//owl carousel
+    $("#owl").owlCarousel({
+        navigation: true,
+        navigationText: ["prev", "next"],
+    });
+
+    //form
+    $('.blog_form').validator();
+
+    //filter gallery
+    /*
+$('.filter a').click(function(e) {
+  e.preventDefault();
+  var a = $(this).attr('href');
+  a = a.substr(1);
+  $('.gallery a').each(function() {
+    if (!$(this).hasClass(a) && a != 'all')
+      $(this).addClass('hide');
+    else
+      $(this).removeClass('hide');
+  });
+
+});
+
+$('.gallery a').click(function(e) {
+  e.preventDefault();
+  var $i = $(this);
+  $('.gallery a').not($i).toggleClass('pophide');
+  $i.toggleClass('pop');
+});
+
+$('#myContent').wookmark();*/
+    
+    $('.grid').isotope({
+  // options
+  itemSelector: '.grid-item',
+  layoutMode: 'fitRows'
+});
+$('.grid').isotope({
+  layoutMode: 'packery',
+  itemSelector: '.grid-item',
+  packery: {
+    horizontal: true
+  }
+});
 
 });

@@ -15,6 +15,8 @@
         <link href="https://fonts.googleapis.com/css?family=Great+Vibes" rel="stylesheet">
         <link href="https://fonts.googleapis.com/css?family=Open+Sans" rel="stylesheet">
         <link rel="stylesheet" href="https://cdnjs.cloudflare.com/ajax/libs/material-design-iconic-font/2.2.0/css/material-design-iconic-font.min.css">
+        <link href="css/owl.carousel.css" rel="stylesheet" type="text/css"/>
+        <link href="css/owl.theme.css" rel="stylesheet" type="text/css"/>
         <link href="css/material-design-iconic-font.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap.css" rel="stylesheet" type="text/css"/>
         <link href="css/bootstrap-datetimepicker.css" rel="stylesheet" type="text/css"/>
@@ -41,17 +43,16 @@
                             <img src="img/logo.png" alt="" class="img-responsive navImg-up"/>
                         </a>
                     </div>
-
                     <!-- Collect the nav links, forms, and other content for toggling -->
                     <div class="collapse navbar-collapse" id="bs-example-navbar-collapse-1">
                         <ul class="nav navbar-nav">
-                            <li><a href="#">Home</a></li>
-                            <li><a href="#">About</a></li>
+                            <li><a href="01home.html">Home</a></li>
+                            <li><a href="02about.html">About</a></li>
                             <li><a href="#">Service</a></li>
-                            <li><a href="#">Menu</a></li>
-                            <li><a href="#">Reservation</a></li>
-                            <li><a href="#">Blog</a></li>
-                            <li><a href="#">Contact</a></li>
+                            <li><a href="03menu.html">Menu</a></li>
+                            <li><a href="07reservation.html">Reservation</a></li>
+                            <li><a href="05blog.html">Blog</a></li>
+                            <li><a href="09contact.html">Contact</a></li>
                         </ul>
                     </div><!-- /.navbar-collapse -->
                 </nav>
@@ -60,76 +61,89 @@
         </header>
         <main>
             <!-- SECTION "mainImg" start-->
-            <section class="mainImg mainImg-blog">
+            <section class="mainImg">
                 <div class="about">
-                    <h1 class="gold vibes divider"><span>Single Food Menu</span></h1>
+                    <h1 class="gold vibes divider"><span>Make a Reservation Today</span></h1>
                 </div>
-            </section><!-- SECTION "mainImg" end-->
-            <!-- SECTION "" start-->
-            <section>
-                <figure>
-                    <img src="img/salmon.png" alt="" class="img-responsive"/>
-                </figure>
-            </section><!-- SECTION "" end-->
-            <!-- SECTION "steak" start-->
-            <section class="steak">
+            </section><!-- SECTION "mainImg" end-->           
+            <!-- SECTION "reservation-page" start-->
+            <section class="reservation reservation-page">
                 <div class="container">
-                    <div class="dhaka text-center">
-                        <p> <span class="center-block">Dhakaia Steak Marinade (Price: $9.99&ast;)</span></p>
-                    </div>
-                    <div class="about-dhaka">
-                        <p class="sans text-center">
-                            Lorem ipsum dolor sit amet, consectetur adipisicing elit, sed do 
-                            eiusmod tempor incididunt ut labore et dolore magna aliqua. 
-                        </p>
-                        <p class="sans text-center">
-                            Ut enim ad minim veniam, quis nostrud exercitation ullamco laboris 
-                            nisi ut aliquip ex ea commodo consequat. Duis aute 
-                        </p>
-                        <p class="sans text-center">
-                            irure dolor in reprehenderit in voluptate velit esse cillum dolore eu fugiat nulla pariatur. 
-                        </p>
-                    </div>
-                    <div class="row nutrition">
-                        <div class="col-md-4">
-                            <article>
-                                <p class="philo">Nutritional Value (Minerals)</p>
-                                <p>&check; Potassium - 393 mg</p>
-                                <p>&check; Phosporous - 296 mg</p>
-                                <p>&check; Calcium - 27 mg</p>
-                                <p>&check; Magnesium - 32 mg</p>
-                                <p>&check; Iron - 4.11 mg</p>
-                                <p>&check; Sodium - 80 mgbe</p>
-                                <p>&check; Zinc - 11.32 mg</p>
-                            </article>  
-                        </div>
-                        <div class="col-md-4">
-                            <article>
-                                <p class="philo">Nutritional Value (Vitamins)</p>
-                                <p>&check; Vitamin B1 - 0.1 mg</p>
-                                <p>&check; vitamin B2 - 0.291 mg</p>
-                                <p>&check; Niacin - 6.979 mg</p>
-                                <p>&check; Pantothenic Acid - 0.971 mg</p>
-                                <p>&check; Vitamin B6 - 0.0481 mg</p>
-                                <p>&check; Folate - 15 mcg</p>
-                                <p>&check; Vitamin B12 - 3.62 mcg</p>
-                            </article>  
-                        </div>
-                        <div class="col-md-4">
-                            <article>
-                                <p class="philo">Ingredients of Steak</p>
-                                <p><span class="fa fa-stop"></span> 2 cups soy sauce</p>
-                                <p><span class="fa fa-stop"></span> 6 cloves garlic, minced</p>
-                                <p><span class="fa fa-stop"></span> 2 tablespoons ground ginger</p>
-                                <p><span class="fa fa-stop"></span> 2 tablespoons cider vinegar</p>
-                                <p><span class="fa fa-stop"></span> 2 cups rose water</p>
-                                <p><span class="fa fa-stop"></span> 1 kg beef slice from leg</p>
-                                <p><span class="fa fa-stop"></span> 3 spoons tomato sauce</p>
-                            </article>  
+                    <h4 class="philo text-center">Reserve a Table Online!</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6 reserve">
+                                    <div class="form-group">
+                                        <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                            <input class="form-control sans" size="16" type="text" value="" placeholder="Date&midast;" readonly required>
+                                        </div>
+                                        <input type="hidden" id="dtp_input2" value="" />
+                                    </div> 
+                                </div>  
+                                <div class="col-sm-6">
+                                    <div class="form-group reserve">
+                                        <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                            <input class="form-control sans" size="16" type="text" value="" placeholder="Time&midast;" readonly required>
+                                        </div>
+                                        <input type="hidden" id="dtp_input3" value="" /><br/>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 people reserve">
+                                    <div class="input-group" data-link-field="dtp_input4">
+                                        <span class="input-group-addon"><span class="fa fa-users"></span></span>
+                                        <select class="form-control sans" id="dtp_input4">
+                                            <option selected="selected" required>No.of people&midast;</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-sm-6 reserve">
+                                    <div class="input-group" data-link-field="dtp_input5">
+                                        <span class="input-group-addon"><span class="fa fa-cutlery"></span></span>
+                                        <select class="form-control sans" id="dtp_input5" required>
+                                            <option selected="selected" required>Restaurant Branch&midast;</option>
+                                            <option>New York</option>
+                                            <option>Melbourne</option>
+                                            <option>Dhaka</option>
+                                        </select>
+                                    </div>
+                                </div>
+                                <div class="col-xs-12">
+                                    <textarea class="form-control sans" rows="4" placeholder="Special requirments"></textarea>
+                                </div>
+                                <button class="center-block sans goldLink">Find a Table</button>
+                            </div>
+                        </form>
+                </div>
+            </section><!-- SECTION "reservation" end-->
+            <!-- SECTION "" start-->
+            <section class="call">
+                <div class="call-hover">
+                    <div class="container">
+                        <h1 class="gold vibes text-center">+1-202-555-0128   /  +1-410-547-0133</h1>
+                        <div class="row">
+                            <div class="col-sm-6 text-center">
+                                <p class="philo call-left">Call For Table Reservation</p>
+                            </div>
+                            <div class="col-sm-6 text-center">
+                                <p class="philo call-right">Call For Special Events</p>
+                            </div>
                         </div>
                     </div>
                 </div>
-            </section><!-- SECTION "steak" end-->
+
+            </section>
+            <!-- SECTION "" end-->
+
+
+
+
+
         </main>
         <!-- FOOTER start-->
         <footer>
@@ -272,12 +286,13 @@
 
 
 
-
         <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>
 
         <script src="js/vendor/bootstrap.min.js"></script>
+        <script src="js/owl.carousel.js" type="text/javascript"></script>
         <script src="js/bootstrap-datetimepicker.js" type="text/javascript"></script>
+        <script src="js/validator.js" type="text/javascript"></script>
         <script src="js/main.js"></script>
 
         <!-- Google Analytics: change UA-XXXXX-X to be your site's ID. -->

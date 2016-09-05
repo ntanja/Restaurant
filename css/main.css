@@ -51,6 +51,17 @@ a:hover{
     background-color: #d4af37; 
     color: #fff;
 }
+.gray-link{
+    background: #fff;
+    border: 1px solid #e4e4e4;
+    color: #6f6f6f;
+    padding: 3px 10px;
+}
+.gray-link:hover{
+    color: #fff;
+    background-color: #d4af37;
+    border: 1px solid #d4af37;
+}
 /****************HEADER-NAVIGATION******************/
 header{
     position: fixed;
@@ -214,7 +225,7 @@ main{
 }  
 /****************SECTION "wood" ******************/
 .wood{
-    background: url("style-images/wood.png")no-repeat center center;
+    background: url("style-images/wood1.png")no-repeat center center;
     background-size: cover;
     color: #fff;
 }
@@ -461,10 +472,24 @@ figure.chefPic{
 
 /****************SECTION "reservation" ******************/
 .reservation{
-    background: #111;
+    background: url("style-images/table.png")no-repeat center center;
+    background-size: cover;
+    position: relative;
+}
+.res-hover{
+    background: rgba(0,0,0,0.9);
+    width: 100%;
+    height: 100%;
+    top: 0;
+    bottom: 0;
+    left: 0;
+    right: 0;
+}
+.reservation .black{
+    background: #1d1d1d;
+    z-index: 10;
 }
 .reservation .row{
-    background: #1d1d1d;
     padding: 20px 0;  
     margin-bottom: 20px;
 }
@@ -472,7 +497,7 @@ figure.chefPic{
 .reservation .input-group-addon{
     border: 1px solid #2f2f2f;
     border-radius: 0;
-    background: #202020;
+    background-color: #202020;
 }
 .reservation .form-control::-moz-placeholder {
     color: #666;
@@ -495,22 +520,6 @@ figure.chefPic{
 .reservation button:hover{
     color: #fff;
     background-color: #d4af37;
-}
-.reservation  select{
-    -webkit-appearance: none;
-    -moz-appearance: none;
-    -ms-appearance: none;
-    -o-appearance: none;
-    appearance: none;
-    font-size: .9em;
-    background: url(style-images/arrow.png)no-repeat right 8px;
-    background-size: 20px 20px;
-    padding: 2px 10px 2px 5px;   
-    border: 1px solid #2f2f2f;
-    color: #666;
-}
-.reservation  select::-ms-expand{
-    display: none;
 }
 /****************SECTION "blog" ******************/
 .blogNews{
@@ -595,10 +604,15 @@ figure.chefPic{
     padding-right: 15px;
     margin-top: 15px;
 }
-.social span.fa-facebook:hover{ 
+.social span.fa-facebook:hover,
+.contact-info span.fa-facebook:hover,
+.contact-info span.fa-tumblr:hover{ 
     color: #3b5999;
 }
-.social span.fa-twitter:hover{
+.social span.fa-twitter:hover,
+.contact-info span.fa-twitter:hover,
+.contact-info span.fa-skype:hover,
+.contact-info span.fa-linkedin:hover{
     color: #1da1f3;
 }
 .social span.fa-pinterest-p:hover,
@@ -693,7 +707,7 @@ figure.chefPic{
 /****************SECTION "mainImg" ******************/
 .mainImg{
     position: relative;
-    height: 380px;
+    height: 170px;
     background: url("style-images/main.jpg")no-repeat center center;
     background-size: cover;
 }
@@ -883,10 +897,12 @@ a.letter{
     right: 10px;
     display: none;
     padding-top: 55%;
-
 }
 .pasta:hover .breakHover{
     display: block;
+}
+.pasta{
+    display: none;
 }
 .menu-break img{
     padding-top: 30px;
@@ -960,7 +976,7 @@ a.letter{
     transition: 1s;
 }
 .pizza figure:hover img{
- transform: scale(1.2);
+    transform: scale(1.2);
 }
 
 .pizza p.nov{
@@ -1102,13 +1118,13 @@ a.letter{
 }
 /****pagination end****/
 
-.blog-page .form-control{
+.blog-page .form-search{
     border: 1px solid #e4e4e4;
     border-right: none;
     border-radius: 0;
     box-shadow: none;
 }
-.blog-page span.fa-search{
+.blog-page span.search{
     border-left: 1px solid #e4e4e4;
     padding: 2px;
     padding-left: 15px;
@@ -1143,7 +1159,7 @@ a.letter{
 }
 .categories p{
     border-bottom: 1px solid #eaeaea;
-     padding: 10px 0;
+    padding: 10px 0;
 }
 .categories p:last-of-type{
     border-bottom: none;
@@ -1189,5 +1205,253 @@ a.letter{
     padding: 10px;
     background: #f4f4f4;
 }
-
-
+ul.blog-social li{
+    padding-right: 0px;
+    display: inline-block;
+}
+ul.blog-social li a{
+    color: #fff;
+}
+ul.blog-social li a:hover span{
+    color: #fff;
+}
+ul.blog-social span{
+    border-radius: 50%;
+    padding: 5px;
+    width: 20px;
+    height: 20px;
+}
+ul.blog-social span.fa-rss{
+    background: #fbae42;
+}
+ul.blog-social span.fa-facebook{
+    background: #617fbd;
+}
+ul.blog-social span.fa-twitter{
+    background: #6cb7df;
+}
+ul.blog-social span.fa-pinterest-p{
+    background: #c73a42;
+}
+ul.blog-social span.zmdi-flickr{
+    background: #ff0084;
+}
+ul.blog-social span.fa-vimeo{
+    background: #6eb0c0;
+}
+/****owl carousel start****/
+.blog-posts figure{
+    width: 270px;
+    height: 185px;
+    margin: 0 10px;
+}
+.blog-posts figure img{
+    border: 1px solid #e4e4e4;
+    max-height: 100%;
+    max-width: 100%;
+}
+.carousel-hover a span{
+    color: #fff;
+    padding-top: 30%;
+}
+.carousel-hover{
+    position: absolute;
+    background: rgba(211,175,55,0.7);
+    width: 270px;
+    height: 185px;
+    top: 0;
+    bottom: 0;
+    left: 10px;
+    right: 0;
+    display: none;
+}
+.blog-hover{
+    position: relative;
+}
+.blog-hover:hover .carousel-hover{
+    display: block;
+}
+/****owl carousel end****/
+.author{
+    border: 1px solid #e4e4e4;
+    margin: 0;
+    margin-bottom: 30px;
+    padding-top: 20px;
+}
+.text-comment button{
+    margin-top: 20px;
+    padding: 5px 30px;
+    font-size: 15px;
+}
+.blog-paging{
+    border-top: 1px solid #e4e4e4;
+    padding-top: 15px;
+}
+.blog-paging li a{
+    border: none;
+    color: #999;
+}
+.blog-paging li a:hover{
+    color: #d4af37;
+    background: none;
+}
+.blog-form input{
+    margin-bottom: 25px;
+}
+.form-control:focus {
+    border-color: #d4af37;
+    box-shadow: none;
+}
+/************************************************/
+/*             PAGE 07 RESERVATION              */
+/************************************************/
+/***************SECTION - "reservation-page"***********/
+.reservation-page{
+    background: none;
+    margin-top: 40px;
+}
+.reservation-page h4{
+    margin-bottom: 30px;
+}
+.reservation-page form{
+    background: #fff;
+}
+.reservation-page .input-group{
+    margin-bottom: 20px;
+}
+.reservation-page .form-group{
+    margin: 0;
+}
+.reservation-page .form-control,
+.reservation-page .input-group-addon{
+    border: 1px solid #e1e1e1;
+    background-color: #fff;
+}
+.reservation-page .reserve .form-control{
+    border-left: none;
+    height: 38px;
+}
+.reservation-page .input-group-addon{
+    border-right: none;
+}
+.reservation-page span.fa,
+.reservation-page span.glyphicon{
+    padding: 5px;
+    padding-right: 10px;
+    border-right: 1px solid #e1e1e1;
+}
+.reservation .form-control:focus {
+    border-color: #e1e1e1;
+}
+.reservation-page button{
+     background: #fff;
+     width: 50%;
+}
+.reservation-page textarea.form-control {
+    margin-bottom: 20px;
+}
+/***************SECTION - "call"***********/
+.call{
+    background: url("style-images/tomatoes.png")no-repeat center center;
+    background-size: cover;
+    height: 250px;
+    width: 100%;
+    position: relative;
+}
+.call-hover{
+    background: rgba(0,0,0,0.8);
+    position: absolute;
+    top: 0;
+    left: 0;
+    right: 0;
+    bottom: 0;
+}
+.call-hover h1{
+    padding-top: 30px;
+}
+.call-hover p{
+    font-size: 18px;
+    color: #fff;
+}
+/************************************************/
+/*               PAGE 09 CONTACT                */
+/************************************************/
+/***************SECTION - "contact-info"***********/
+.contact-info{
+    margin-bottom: 30px;
+}
+.contact-info h4{
+    margin: 40px 0;
+}
+.contact-info .input-group,
+.contact-info textarea{
+    margin-bottom: 20px;
+    border-radius: 0;
+}
+.contact-info .form-control:focus {
+    border-color: #ccc;
+    box-shadow: none;
+}
+.contact-info .input-group .form-control{
+    border-left: none;
+    height: 45px;
+}
+.contact-info .input-group .form-control:last-child{
+    border-radius: 0;
+}
+.contact-info .input-group-addon{
+    background: none;
+    border-radius: 0;
+}
+.contact-info button{
+    margin-left: 15px;
+    padding: 15px 25px;
+    margin-bottom: 30px;
+}
+.contact-info a{
+    color: #686d80;  
+}
+.contact-info a:hover{
+    color: #d4af37;  
+}
+.contact-info span.fa-rss:hover{
+    color: #fa9006;
+}
+.contact-info span.fa-google-plus:hover,
+.contact-info span.fa-pinterest:hover{
+    color: #cd0a18;
+}
+.contact-info p{
+    margin-bottom: 0;
+    font-size: 13px;
+}
+.contact-info h5{
+    margin: 20px 0 15px;
+}
+.gray-line{
+    padding-bottom: 10px;
+    border-bottom: 1px solid #e1e1e1;
+    width: 60%;
+}
+/***************SECTION - "gmap"***********/
+.gmap iframe{
+    width: 100%;
+    height: 300px;
+}
+/***************SELECT BACKGROUND**********/
+.reservation select{
+    -webkit-appearance: none;
+    -moz-appearance: none;
+    -ms-appearance: none;
+    -o-appearance: none;
+    appearance: none;
+    font-size: .9em;
+    background: url(style-images/arrow.png)no-repeat right 8px;
+    background-size: 20px 20px;
+    padding: 2px 10px 2px 5px;   
+    border: 1px solid #2f2f2f;
+    color: #666;
+}
+.reservation  select::-ms-expand{
+    display: none;
+}
