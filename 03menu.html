@@ -508,55 +508,57 @@
             </section><!-- SECTION "drinks" end-->
             <!-- SECTION "reservation" start-->
             <section class="reservation">
-                <div class="container">
-                    <h2 class="vibes divider text-center">Make a Reservation</h2>
-                    <form>
-                        <div class="row">
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
-                                        <input class="form-control sans" size="16" type="text" value="" placeholder="Date&midast;" readonly required>
+                <div class="res-hover">
+                    <div class="container">
+                        <h2 class="vibes divider text-center">Make a Reservation</h2>
+                        <form>
+                            <div class="row">
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="input-group date form_date" data-date="" data-date-format="dd MM yyyy" data-link-field="dtp_input2" data-link-format="yyyy-mm-dd">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-calendar"></span></span>
+                                            <input class="form-control sans" size="16" type="text" value="" placeholder="Date&midast;" readonly required>
+                                        </div>
+                                        <input type="hidden" id="dtp_input2" value="" />
+                                    </div> 
+                                </div>  
+                                <div class="col-sm-6">
+                                    <div class="form-group">
+                                        <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
+                                            <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
+                                            <input class="form-control sans" size="16" type="text" value="" placeholder="Time&midast;" readonly required>
+                                        </div>
+                                        <input type="hidden" id="dtp_input3" value="" /><br/>
                                     </div>
-                                    <input type="hidden" id="dtp_input2" value="" />
-                                </div> 
-                            </div>  
-                            <div class="col-sm-6">
-                                <div class="form-group">
-                                    <div class="input-group date form_time" data-date="" data-date-format="hh:ii" data-link-field="dtp_input3" data-link-format="hh:ii">
-                                        <span class="input-group-addon"><span class="glyphicon glyphicon-time"></span></span>
-                                        <input class="form-control sans" size="16" type="text" value="" placeholder="Time&midast;" readonly required>
+                                </div>
+                                <div class="col-sm-6 people">
+                                    <div class="input-group" data-link-field="dtp_input4">
+                                        <span class="input-group-addon"><span class="fa fa-users"></span></span>
+                                        <select class="form-control sans" id="dtp_input4">
+                                            <option selected="selected" required>No.of people&midast;</option>
+                                            <option>1</option>
+                                            <option>2</option>
+                                            <option>3</option>
+                                            <option>4</option>
+                                        </select>
                                     </div>
-                                    <input type="hidden" id="dtp_input3" value="" /><br/>
                                 </div>
-                            </div>
-                            <div class="col-sm-6 people">
-                                <div class="input-group" data-link-field="dtp_input4">
-                                    <span class="input-group-addon"><span class="fa fa-users"></span></span>
-                                    <select class="form-control sans" id="dtp_input4">
-                                        <option selected="selected" required>No.of people&midast;</option>
-                                        <option>1</option>
-                                        <option>2</option>
-                                        <option>3</option>
-                                        <option>4</option>
-                                    </select>
+                                <div class="col-sm-6">
+                                    <div class="input-group" data-link-field="dtp_input5">
+                                        <span class="input-group-addon"><span class="fa fa-cutlery"></span></span>
+                                        <select class="form-control sans" id="dtp_input5" required>
+                                            <option selected="selected" required>Restaurant Branch&midast;</option>
+                                            <option>Breakfast</option>
+                                            <option>Lunch</option>
+                                            <option>Dinner</option>
+                                            <option>Drink</option>
+                                        </select>
+                                    </div>
                                 </div>
+                                <button class="center-block sans">Find a Table</button>
                             </div>
-                            <div class="col-sm-6">
-                                <div class="input-group" data-link-field="dtp_input5">
-                                    <span class="input-group-addon"><span class="fa fa-cutlery"></span></span>
-                                    <select class="form-control sans" id="dtp_input5" required>
-                                        <option selected="selected" required>Restaurant Branch&midast;</option>
-                                        <option>Breakfast</option>
-                                        <option>Lunch</option>
-                                        <option>Dinner</option>
-                                        <option>Drink</option>
-                                    </select>
-                                </div>
-                            </div>
-                            <button class="center-block sans">Find a Table</button>
-                        </div>
-                    </form>
+                        </form>
+                    </div>
                 </div>
             </section><!-- SECTION "reservation" end-->
         </main>
@@ -699,8 +701,8 @@
         </footer><!-- FOOTER end-->
 
 
-        
-        
+
+
 
         <script src="js/jquery-3.0.0.min.js" type="text/javascript"></script>
         <script>window.jQuery || document.write('<script src="js/vendor/jquery-1.11.2.js"><\/script>')</script>

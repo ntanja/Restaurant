@@ -573,9 +573,14 @@ figure.chefPic{
 .first{
     border-bottom: 1px solid #363636;
 }
+/****************FOOTER******************/
+footer{
+    background:url("style-images/footimg.png")no-repeat center center;
+    background-size: cover;
+}
 /****************SECTION "footerTop" ******************/
 .footerTop{
-    background: #1e1e1e;
+    background: rgba(0,0,0,0.8);
 }
 .footerTop h3{
     color: #fff;
@@ -685,7 +690,7 @@ figure.chefPic{
 }
 /****************SECTION "footerBottom" ******************/
 .footerBottom{
-    background: #111;
+    background: rgba(0,0,0,0.9);
 }
 .footerBottom a{
     color: #7d7d7d;
